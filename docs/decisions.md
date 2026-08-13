@@ -1,0 +1,28 @@
+# Decision Record
+
+This file records consequential scientific and repository decisions. Decisions may be superseded, but not silently rewritten; add a new entry and link it to the earlier one.
+
+| ID | Date | Status | Decision | Rationale | Revisit when |
+|---|---|---|---|---|---|
+| D001 | 2026-08-13 | Accepted | Use `perspective-dynamics` as the project and repository name. | Describes the central manipulation and dynamical focus without asserting a result. | The scientific scope materially changes. |
+| D002 | 2026-08-13 | Accepted | Treat Week 1 as documentation-only initialization. | Precise hypotheses and controls are needed before choosing an implementation. | The Week 1 review is complete. |
+| D003 | 2026-08-13 | Accepted | Define perspective as a contextual state that changes feature weighting, relations, dynamics, or readout. | Makes the term operational and distinguishes it from generic new information. | A formal model exposes ambiguity. |
+| D004 | 2026-08-13 | Accepted | Keep fixed, random-switching, matched-noise/task-switch, and oracle-frame controls in the initial roadmap. | Separates geometry change from more search, perturbation, switching, or information. | A control proves infeasible; document replacement. |
+| D005 | 2026-08-13 | Accepted | Establish the computational effect before Brian2 or detailed neuron models. | Avoids biological complexity obscuring whether the proposed effect exists. | H1–H4 have a robust minimal-model result. |
+| D006 | 2026-08-13 | Accepted | Use a claim ladder and explicit disconfirmation criteria. | Prevents a narrow simulation result from being described as a general theory of creativity. | Never; individual criteria may be refined prospectively. |
+| D007 | 2026-08-13 | Provisional | Consider Grossberg/ART-style competition, adaptation, vigilance, and mismatch/reset as candidate mechanisms. | They offer plausible control motifs but are not yet uniquely supported. | After minimal adaptive switching is characterized. |
+| D008 | 2026-08-13 | Accepted | Configure the intended GitHub remote but do not publish in this phase. | “Prepare for publishing” is distinct from making an external repository public. | Owner approves the documentation and requests publication. |
+
+## Decision template
+
+```text
+ID and date:
+Status: proposed | accepted | rejected | superseded
+Context:
+Decision:
+Alternatives considered:
+Evidence and assumptions:
+Consequences:
+Revisit trigger:
+Links to experiments/commits:
+```

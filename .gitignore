@@ -1,0 +1,11 @@
+.DS_Store
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.ipynb_checkpoints/
+
+# Generated research artifacts should be selectively tracked with provenance.
+results/data/
