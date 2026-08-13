@@ -1,0 +1,1 @@
+{"category_count":3,"epochs":80,"learning_rate":0.35,"seed":11011,"random_seed_start":11100,"random_seed_stop":11299,"minimum_purity":0.8,"minimum_transfer_accuracy":0.8,"minimum_som_minus_random":0.2}

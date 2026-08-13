@@ -35,3 +35,12 @@ Biological interpretation remains closed. The next computational question is
 whether a system can discover or construct a useful cross-perspective bridge
 from separate experiences in a way that yields measurable transfer or
 efficiency beyond a planner operating on the same stored experience.
+
+## Predictive Schema and Bridge Discovery
+
+**Status:** Prospectively designed; results not yet generated.
+
+EXP011–EXP014 test unsupervised category formation, prediction-driven category
+refinement, multiple predictive organizations, and bridge discovery from
+episodes. The phase uses computational SOM and ART/ARTMAP-style motifs only.
+Biological interpretation remains out of scope.

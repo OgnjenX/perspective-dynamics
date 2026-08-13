@@ -381,3 +381,34 @@ does not yet have evidence for a computational primitive beyond planning. No
 `biological_grounding/` track is created. The next experiment must withhold the
 bridge and test whether it can be discovered from separate experiences under a
 matched-information comparison.
+
+## 2026-08-14 — Predictive schema-discovery phase design freeze
+
+### Motivation
+
+PR #12 is preserved as a valuable negative result: supplied abstractions and a
+supplied bridge reduce to ordinary forward planning. The new target is
+formation of reusable predictive representations from episodes.
+
+### Experiment ladder
+
+EXP011 tests unsupervised similarity categories and held-out object transfer.
+EXP012 tests whether prediction-error reset/refinement improves categories over
+SOM similarity. EXP013 tests whether different prediction targets organize the
+same episodes differently. EXP014 withholds the bridge and asks whether a
+predictive learner recovers the elevation-plus-stability conjunction from
+positive and negative candidate configurations.
+
+### Claim and mechanism boundary
+
+The ART/ARTMAP terminology is restricted to an algorithmic motif: competitive
+choice, vigilance, prediction mismatch, reset, and category creation. No neural
+dynamics, biological ART interpretation, hippocampal/PFC account, DFT, neural
+manifold, or metastability document is created in this phase.
+
+### Falsification commitment
+
+All experiments compare random categories, similarity-only SOM, predictive
+categories, ordinary memory/planning, and hand-written references where
+applicable. Failure to outperform matched nonpredictive and ordinary baselines
+will keep the biological phase closed.
