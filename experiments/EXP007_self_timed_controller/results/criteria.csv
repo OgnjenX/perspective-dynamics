@@ -1,0 +1,4 @@
+scope,topology,propagation_rule,h71_calibration_pass,spearman_rho,adjacent_reversals,distinct_optima,interior_optima,h72_adaptation_control_pass,adaptation_threshold_wins,mean_progress_minus_adaptation,h73_replay_control_pass,replay_threshold_wins,mean_progress_minus_replay,h74_variable_dwell_pass,variable_dwell_thresholds,environment_pass
+environment,path,source_normalized,1,0.95431352,0,4,7,1,7,0.37634305,1,7,0.70753761,0,0,0
+environment,branched_path,symmetric_normalized,1,0.99103121,0,6,7,1,7,0.18954201,1,7,0.30638087,0,0,0
+overall,all,all,,,,,,,,,,,,,,0

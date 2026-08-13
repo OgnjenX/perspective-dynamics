@@ -27,6 +27,8 @@ Record each consequential change in `docs/decisions.md`; append rather than sile
 - `make analyze-exp005`: apply the frozen rank-trend confirmation criteria.
 - `make exp006`: run the topology × propagation falsification grid.
 - `make analyze-exp006`: apply the frozen environment-level robustness criteria.
+- `make exp007`: run the self-timed controller and matched controls.
+- `make analyze-exp007`: apply the frozen clock-free calibration criteria.
 - `make reproduce`: run tests, generation, and analysis in sequence.
 
 Python 3.11 or later is required; the baseline has no third-party runtime dependency. Use four-space indentation, type hints, immutable dataclasses for configurations/results, and deterministic node ordering.

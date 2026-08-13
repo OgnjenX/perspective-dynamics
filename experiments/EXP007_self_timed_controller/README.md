@@ -8,4 +8,11 @@ EXP007 targets the strongest remaining artifact explanation for F001. The contro
 
 ## Status
 
-Prospective design frozen before implementation or result generation.
+Completed with a partial falsification. Calibration and both matched controls passed in both environments, but the frozen completed-dwell-variability criterion failed, so the overall conjunction failed. See `conclusion.md`.
+
+## Reproduce
+
+```text
+make exp007
+make analyze-exp007
+```

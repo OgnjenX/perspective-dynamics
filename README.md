@@ -38,7 +38,7 @@ Develop and evaluate a biologically grounded computational theory connecting:
 
 ## Project status
 
-Week 1 framing and six computational experiments are complete. `EXP001` validated the fixed baseline; `EXP002` isolated relational geometry; `EXP003` showed evaluation-gated switching beats schedule-matched replay; `EXP004` confirmed an intermediate dwell regime; `EXP005` confirmed on held-out seeds that stricter evidence thresholds shift productive perspective dwell later; and `EXP006` found that this relation survives a branched topology and symmetric-normalized propagation under frozen criteria. The finding remains synthetic and controller-specific. These experiments are mechanistic groundwork; they do not yet test perspective-repertoire size, collaboration, self-timed neural dynamics, or hippocampal involvement.
+Week 1 framing and seven computational experiments are complete. `EXP001`–`EXP006` established and structurally challenged a model-specific evidence-demand/dwell relation. `EXP007` removed periodic decision blocks: calibration and matched controls passed, but the full experiment failed because productive frames became horizon-censored absorbing states rather than demonstrating repeated variable completed dwell. The finding remains synthetic and controller-specific. These experiments are mechanistic groundwork; they do not yet test perspective-repertoire size, collaboration, neural dynamics, or hippocampal involvement.
 
 Run the fully reproducible baseline with:
 

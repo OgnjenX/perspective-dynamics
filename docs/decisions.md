@@ -36,6 +36,8 @@ This file records consequential scientific and repository decisions. Decisions m
 | D030 | 2026-08-13 | Accepted | Test a self-timed mismatch/adaptation controller before biological neuron models. | The external decision clock is now the strongest obvious artifact explanation for F001. | A clock-free controller is specified and tested prospectively. |
 | D031 | 2026-08-13 | Accepted | Define EXP007 switching through a per-step mismatch accumulator whose growth is opposed by normalized positive progress. | Produces trajectory-dependent segment boundaries without periodic evaluation blocks while keeping the mechanism transparent. | EXP007 integrity checks show fixed rather than variable realized dwell. |
 | D032 | 2026-08-13 | Accepted | Compare progress coupling with adaptation-only and exact-timing random replay controls. | Separates continuous task feedback from an intrinsic timer and separates frame selection from realized switch timing. | A control cannot be matched without leaking task information. |
+| D033 | 2026-08-13 | Accepted | Record EXP007 as an overall failure despite passing calibration and both performance controls. | The frozen variable completed-dwell criterion failed in both environments; censoring cannot be redefined after inspection. | Never for EXP007. |
+| D034 | 2026-08-13 | Accepted | Require a nonabsorbing multi-stage task before claiming emergent variable dwell. | One permanently useful frame encourages escape followed by horizon-censored absorption, preventing repeated productive dwell observations. | A prospectively defined task produces multiple uncensored perspective-relevance changes. |
 
 ## Decision template
 

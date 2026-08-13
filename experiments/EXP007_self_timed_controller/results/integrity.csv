@@ -1,0 +1,3 @@
+topology,propagation_rule,replay_pairs,exact_segment_length_matches,all_replay_timings_match
+path,source_normalized,12600,12600,1
+branched_path,symmetric_normalized,12600,12600,1
