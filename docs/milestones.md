@@ -18,13 +18,20 @@ plausibility. Those questions remain open.
 
 ## Testing Genuine Compositional Emergence
 
-**Status:** Next research milestone; experiments not yet completed.
+**Status:** Completed with qualified structural support; distinctiveness gate failed.
 
-EXP009 will test relational generalization across held-out objects and
-environments with matched single-perspective, pooling, graph-search, random,
-and name-scrambling controls. EXP010 will test whether integration creates a
-trajectory absent from each individual perspective and from a static union
-without the integration operation.
+EXP009 passed relational transfer, single-perspective/pooling controls,
+name-scrambling invariance, and the matched-budget random control. EXP010 passed
+individual/static-union exclusion, counterfactual necessity, exhaustive schema
+ordering, provenance, and the matched-capacity sham.
 
-Biological interpretation remains gated on convincing computational evidence
-from these experiments.
+Both experiments failed the stronger gate: an ordinary forward planner given
+the same operators exactly reproduced structured composition. The current
+implementation is therefore best characterized as abstract compositional
+planning with perspective provenance. It is not yet evidence for a distinct
+creative-computation principle.
+
+Biological interpretation remains closed. The next computational question is
+whether a system can discover or construct a useful cross-perspective bridge
+from separate experiences in a way that yields measurable transfer or
+efficiency beyond a planner operating on the same stored experience.

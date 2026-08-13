@@ -1,0 +1,19 @@
+{
+  "claim_boundary": "Role annotations are supplied. Distinctiveness from ordinary planning is a separate gate from relational transfer.",
+  "criteria": {
+    "beyond_ordinary_planning_pass": false,
+    "h9_1_relational_transfer": true,
+    "h9_2_single_and_pool_fail": true,
+    "h9_3_name_invariance": true,
+    "h9_4_structured_alignment": true,
+    "h9_5_distinct_from_ordinary_planning": false,
+    "ordinary_planner_equivalent": true,
+    "random_success_rate": 0.6333333333333333,
+    "robust_generalization_pass": true,
+    "structured_minus_random": 0.3666666666666667,
+    "structured_success_rate": 1.0
+  },
+  "experiment": "EXP009",
+  "random_run_count": 1800,
+  "task_count_including_scrambles": 6
+}

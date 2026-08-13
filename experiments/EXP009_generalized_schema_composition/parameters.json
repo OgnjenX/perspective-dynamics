@@ -1,0 +1,9 @@
+{
+  "environments": ["construction", "garden", "warehouse"],
+  "name_scramble_seed": 9009,
+  "random_seeds": {"start": 9100, "stop": 9399},
+  "minimum_structured_minus_random_success_rate": 0.25,
+  "require_all_structured_success": true,
+  "require_all_single_and_pool_failure": true,
+  "require_all_name_pairs_equivalent": true
+}

@@ -24,6 +24,19 @@ from .schema_composition import (
     SchemaCompositionEngine,
     demo_world,
 )
+from .compositional_emergence import (
+    ConcreteExperience,
+    GeneralizationTask,
+    abstract_experience,
+    generalized_schemas,
+    generalized_tasks,
+    integration_schemas,
+    perspective_erased,
+    run_random_schema_selection,
+    scramble_task,
+    sham_integration_schemas,
+    training_experiences,
+)
 
 __all__ = [
     "AssociativeGraph",
@@ -48,4 +61,15 @@ __all__ = [
     "RelationalWorld",
     "SchemaCompositionEngine",
     "demo_world",
+    "ConcreteExperience",
+    "GeneralizationTask",
+    "abstract_experience",
+    "generalized_schemas",
+    "generalized_tasks",
+    "integration_schemas",
+    "perspective_erased",
+    "run_random_schema_selection",
+    "scramble_task",
+    "sham_integration_schemas",
+    "training_experiences",
 ]

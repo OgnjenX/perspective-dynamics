@@ -315,3 +315,69 @@ The same world and schemas are evaluated with structured composition, single-per
 ### Interpretation boundary
 
 Any positive result is an implementation demonstration on a toy world. It does not establish learning, biological plausibility, or creativity. Held-out object renaming, schema-order, and matched-capacity tests remain required before treating the principle as robust.
+
+## 2026-08-13 — EXP009 and EXP010 prospective design freeze
+
+### Milestone
+
+Testing Genuine Compositional Emergence begins after merging the EXP008 Level 1
+prototype. Biological interpretation remains closed.
+
+### EXP009
+
+Test role-annotated abstraction across three held-out environments and paired
+object-name scrambling. Freeze single-perspective, no-chaining pool, random
+selection, and perspective-erased ordinary-planning controls. Relational
+generalization and distinctiveness from planning are separate criteria.
+
+### EXP010
+
+Require an explicit cross-perspective relation that is absent from each
+perspective and from their static union. Freeze schema-removal counterfactuals,
+exhaustive ordering checks, provenance, and a matched ordinary planner.
+
+### Falsification commitment
+
+If ordinary forward planning with the same operators reproduces the result,
+the project will record that the current mechanism is not yet distinct from
+ordinary planning. Structural success alone will not open the biological phase.
+
+### Pre-execution EXP010 amendment
+
+Before generating results, add a matched-capacity sham integration condition.
+It replaces the valid bridge with an equally sized, applicable rule whose
+effect is irrelevant to the goal. This prevents the static-union comparison
+from attributing success merely to one additional operator or transition.
+
+## 2026-08-13 — EXP009 and EXP010 completed
+
+### Validation
+
+Forty tests passed before execution. EXP009 generated 1,836 events, including
+1,800 matched-budget random runs. EXP010 generated 168 events, including all 72
+environment × schema-order integration runs and their matched ordinary-planner
+runs. Re-execution produced deterministic summaries.
+
+### EXP009 result
+
+H9.1–H9.4 passed. Structured composition solved every original and scrambled
+task; single perspectives and no-chaining pooling failed; names were invariant;
+and structured success exceeded random selection by 0.366667. H9.5 failed
+because the ordinary planner was exactly equivalent.
+
+### EXP010 result
+
+H10.1–H10.6 and the structural-emergence conjunction passed. The valid bridge
+was sufficient, both source schemas were necessary, the static union and sham
+failed, and all schema orders succeeded with complete provenance. The
+beyond-ordinary-planning criterion failed because the matched planner exactly
+reproduced every result and budget.
+
+### Interpretation and gate
+
+The project now has a traceable demonstration of abstract compositional
+planning and of the relation an explicit integration bridge must create. It
+does not yet have evidence for a computational primitive beyond planning. No
+`biological_grounding/` track is created. The next experiment must withhold the
+bridge and test whether it can be discovered from separate experiences under a
+matched-information comparison.
