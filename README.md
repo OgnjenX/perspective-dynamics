@@ -36,7 +36,7 @@ Develop and evaluate a biologically grounded computational theory connecting:
 
 ## Project status
 
-Week 1 framing and four computational experiments are complete. `EXP001` validated the fixed baseline; `EXP002` isolated relational geometry; `EXP003` showed evaluation-gated switching beats schedule-matched replay; and `EXP004` prospectively confirmed an intermediate dwell regime over rapid switching and excessive persistence. EXP004 also revealed an exploratory coupling between evidence threshold and optimal dwell, now awaiting held-out confirmation before it is treated as a substantive result.
+Week 1 framing and five computational experiments are complete. `EXP001` validated the fixed baseline; `EXP002` isolated relational geometry; `EXP003` showed evaluation-gated switching beats schedule-matched replay; `EXP004` confirmed an intermediate dwell regime; and `EXP005` confirmed on held-out seeds that stricter evidence thresholds shift productive perspective dwell later. This first registered finding remains model-specific and requires aggressive falsification before biological interpretation.
 
 Run the fully reproducible baseline with:
 
@@ -53,6 +53,7 @@ make reproduce
 - [Literature map](docs/literature_review.md)
 - [Decision record](docs/decisions.md)
 - [Research log](docs/research_log.md)
+- [Findings registry](docs/findings.md)
 
 ## Research principles
 

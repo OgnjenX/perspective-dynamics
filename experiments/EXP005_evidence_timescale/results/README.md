@@ -1,3 +1,8 @@
 # EXP005 Results
 
-Generated raw, cell-summary, optimum, and confirmatory-criteria tables will be stored here. Post-confirmation exploration must remain separate.
+- `raw.csv`: 16,800 held-out runs;
+- `summary.csv`: 84 block × threshold cells;
+- `optima.csv`: seven threshold-specific selected optima;
+- `criteria.csv`: frozen rank and reversal tests.
+
+Post-confirmation exploration must remain separate.

@@ -1,0 +1,2 @@
+n_thresholds,spearman_rho,minimum_required_rho,rho_pass,adjacent_reversals,maximum_allowed_reversals,reversal_pass,confirmation_pass
+7,0.99103121,0.8,1,0,1,1,1

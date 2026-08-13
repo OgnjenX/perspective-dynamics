@@ -189,3 +189,25 @@ Use 200 unseen seeds (1,000–1,199), 12 block lengths, and seven thresholds for
 ### Claim boundary
 
 Confirmation would establish a model-specific evidence–dwell calibration. Generality across task geometries, propagation rules, and self-timed biological dynamics remains untested.
+
+## 2026-08-13 — EXP005 held-out confirmation
+
+### Validation
+
+Sixteen tests passed. EXP005 generated 16,800 runs over 200 seeds unused by EXP004. The analysis applied the committed rank and reversal criteria without changing the grid or outcome.
+
+### Result
+
+Selected optimal blocks were 2, 3, 3, 4, 5, 7, and 10 as thresholds increased. Spearman ρ was 0.99103121 and there were no downward reversals. Both confirmatory criteria passed.
+
+### Finding registered
+
+F001 records a model-specific evidence–dwell calibration: productive perspective stability increases with the evidence required to validate progress. This is the project’s first confirmed interesting result, not yet a biological or human-creativity claim.
+
+### Literature orientation
+
+Targeted searches found close work on stability/flexibility control, autonomous creative shift-versus-dwell choices, dynamic creative-state cycles, and flexible modulation of metastable state duration. No retrieved paper directly tested the evidence-threshold-to-perspective-dwell relation. This is an inference from a targeted search, not a systematic novelty determination.
+
+### Next research gate
+
+Attempt to falsify F001 across alternative graph structures and propagation rules, then replace the external block clock with self-timed adaptation and mismatch dynamics. Biological implementation remains premature until those tests pass.
