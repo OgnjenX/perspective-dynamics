@@ -16,6 +16,14 @@ from .perspectives import (
     undirected_edge_count,
 )
 from .switching import ScheduledResult, run_adaptive_mismatch, run_schedule
+from .schema_composition import (
+    CompositionResult,
+    PlanStep,
+    RelationalSchema,
+    RelationalWorld,
+    SchemaCompositionEngine,
+    demo_world,
+)
 
 __all__ = [
     "AssociativeGraph",
@@ -34,4 +42,10 @@ __all__ = [
     "run_schedule",
     "total_undirected_weight",
     "undirected_edge_count",
+    "CompositionResult",
+    "PlanStep",
+    "RelationalSchema",
+    "RelationalWorld",
+    "SchemaCompositionEngine",
+    "demo_world",
 ]

@@ -297,3 +297,21 @@ H7.4 failed in both environments. Selected controllers generally made roughly on
 ### Interpretation and next gate
 
 Periodic decision blocks are not necessary for the calibration or performance-control results, but EXP007 does not establish recurrent metastable dwell. The next design must be nonabsorbing: a multi-stage task should change which perspective is useful so repeated uncensored adaptation episodes can be measured. The progress signal should simultaneously be made less solution-proximal than direct goal activation.
+
+## 2026-08-13 — Level 1 schema-composition prototype
+
+### Scope
+
+The project was deliberately moved to a revised computational question: can relational schemas held from separate contexts be composed into a novel useful trajectory? Neural dynamics, ART/DFT, and biological grounding remain out of scope.
+
+### Implementation
+
+EXP008 adds immutable relational worlds, perspective-indexed schemas, variable binding, breadth-first effect-to-prerequisite composition, and per-step provenance. The synthetic task splits the route across support, stability, and goal perspectives.
+
+### Controls and traceability
+
+The same world and schemas are evaluated with structured composition, single-perspective access, and pooled facts without chaining. Results are written as JSONL events plus a JSON summary. Theory documents define perspective, composition, integration, emergence, and falsification criteria before later mechanism work.
+
+### Interpretation boundary
+
+Any positive result is an implementation demonstration on a toy world. It does not establish learning, biological plausibility, or creativity. Held-out object renaming, schema-order, and matched-capacity tests remain required before treating the principle as robust.
