@@ -2,19 +2,28 @@
 
 ## Project Structure & Module Organization
 
-This repository is currently a documentation-first research project. `docs/` contains the scientific question, working theory, falsifiable hypotheses, experimental roadmap, literature map, decision record, and chronological research log. `papers/` holds the bibliography and future source notes. `models/`, `experiments/`, `analysis/`, and `results/` are intentionally empty except for scope READMEs; do not add implementation until the Week 1 framing has been reviewed.
+This repository combines research documentation with small, controlled computational experiments. `docs/` contains the scientific question, working theory, falsifiable hypotheses, roadmap, literature map, decision record, and chronological log. `src/perspective_dynamics/` contains reusable model and task code. Every versioned experiment under `experiments/` owns its prospective hypothesis, method, parameters, entry points, generated outputs, and conclusion. `papers/` holds the bibliography and source notes.
 
 Keep claims at the correct evidence level. Distinguish cited findings, project interpretations, modeling assumptions, and speculation. A conceptual equation is not a result.
 
 ## Documentation Conventions
 
-Use Markdown with descriptive headings, short paragraphs, and LaTeX equations. Define new technical terms on first use. Cite factual scientific claims inline and add complete source metadata to `papers/bibliography.bib`. Verify bibliographic metadata against publisher records before manuscript use.
+Use Markdown with descriptive headings, short paragraphs, and renderer-compatible Unicode or fenced-text equations. Define new technical terms on first use. Cite factual scientific claims inline and add complete source metadata to `papers/bibliography.bib`. Verify bibliographic metadata against publisher records before manuscript use.
 
 Record each consequential change in `docs/decisions.md`; append rather than silently rewriting history. Add dated entries to `docs/research_log.md` for completed work, failed approaches, deviations, and next steps.
 
+## Build, Test, and Experiment Commands
+
+- `make test`: run the standard-library unit tests.
+- `make baseline`: generate EXP001 raw results.
+- `make analyze`: aggregate EXP001 conditions.
+- `make reproduce`: run tests, generation, and analysis in sequence.
+
+Python 3.11 or later is required; the baseline has no third-party runtime dependency. Use four-space indentation, type hints, immutable dataclasses for configurations/results, and deterministic node ordering.
+
 ## Experimental Record
 
-Once implementation is approved, give every experiment its own folder under `experiments/`. It must identify the hypothesis, controls, method, environment, parameters, seeds, exact run instructions, raw outputs, analysis, conclusion, and commit. Preserve negative results. Separate preregistered/confirmatory analyses from exploratory work.
+Every experiment must identify the hypothesis, controls, method, environment, parameters, seeds, exact run instructions, raw outputs, analysis, conclusion, and commit. Preserve negative results. Separate prospective/confirmatory analyses from exploratory work.
 
 ## Commit & Review Guidelines
 
