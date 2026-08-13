@@ -13,8 +13,11 @@ The original path × source-normalized condition is a positive-control replicati
 
 ## Status
 
-Prospective design frozen before implementation or result generation.
+Completed. The positive control and all three novel environments passed the frozen criteria. See `conclusion.md` for interpretation and boundaries.
 
 ## Reproduce
 
-Implementation commands will be added only after the prospective design commit.
+```text
+make exp006
+make analyze-exp006
+```

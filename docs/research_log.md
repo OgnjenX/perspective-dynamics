@@ -247,3 +247,21 @@ Use 150 unseen seeds and the unchanged EXP005 threshold/block grid for 50,400 sc
 ### Boundary
 
 This is a synthetic model robustness test. It does not test the newly introduced effective-repertoire, collaboration, or hippocampal hypotheses. Result generation begins only after this design is committed.
+
+## 2026-08-13 — EXP006 completed
+
+### Validation
+
+Twenty-two unit tests passed. The generalized implementation reproduced every committed EXP005 result file byte-for-byte under the default source-normalized rule. EXP006 generated 50,400 scheduled runs, 336 aggregated cells, 28 selected optima, and four integrity summaries.
+
+### Frozen result
+
+The path/source positive control replicated with ρ = 0.99103121 and no reversal. All three novel environments passed the preregistered conjunction: rank correlations were 0.98198051–0.99103121, none had an adjacent reversal, each selected five or six distinct optima, and every optimum was interior.
+
+### Interpretation
+
+F001 is not specific to the original unbranched path or source-normalized propagation. Added uniform branches shifted optima later while preserving the monotonic evidence-demand relation. This supports structural robustness inside a still-narrow synthetic family.
+
+### Boundary and next step
+
+The controller still evaluates goal activation on an external block clock. EXP007 should remove that clock and test whether local mismatch/adaptation variables generate an evidence-dependent stability–flexibility relation. No collaboration, repertoire-size, or biological claim follows from EXP006.

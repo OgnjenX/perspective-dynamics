@@ -101,8 +101,8 @@ Before coding, freeze:
 
 Pause or revise the theory if perspective benefits vanish under matched compute/information controls, geometry metrics do not generalize out of sample, or results depend on post-hoc task construction. Such outcomes are informative and must be documented.
 
-## Current gate after EXP005
+## Current gate after EXP006
 
-EXP001–EXP005 establish mechanistic groundwork in a deliberately artificial model. They do not directly test the effective-repertoire, collaboration, or hippocampal hypotheses introduced after conceptual review. Preserve those results and their original claim boundaries.
+EXP001–EXP006 establish mechanistic groundwork in a deliberately artificial model. EXP006 passed its frozen topology × propagation robustness criteria, but the controller still relies on an external clock and supervised goal activation. These experiments do not directly test the effective-repertoire, collaboration, or hippocampal hypotheses introduced after conceptual review. Preserve their original claim boundaries.
 
-Before Phase 5, first attempt to falsify F001 across alternative graph structures, propagation rules, progress signals, and self-timed controllers. In parallel, preregister the repertoire manipulation and frame-distance metric without using EXP002–EXP005 outcomes to tune them. Biological implementation remains premature until at least one effect survives these controls.
+Before Phase 5, replace imposed blocks with self-timed mismatch/adaptation and test progress signals that do not directly read the goal node. In parallel, preregister the repertoire manipulation and frame-distance metric without using prior outcomes to tune them. Biological implementation remains premature until the self-timed test is resolved.
