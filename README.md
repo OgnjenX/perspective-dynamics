@@ -34,9 +34,15 @@ Develop and evaluate a biologically grounded computational theory connecting:
 - contextual modulation and adaptive switching;
 - candidate Grossberg-inspired mechanisms such as competition, adaptation, and mismatch/reset.
 
-## Week 1 status
+## Project status
 
-This repository currently contains the scientific framing only. There is **no model implementation, dataset, simulation, or empirical result**. The next phase is gated on review of the research question, theory, hypotheses, and experimental controls.
+Week 1 scientific framing is complete. Phase 1 contains a validated fixed-representation spreading-activation baseline and `EXP001`, which measures degradation across associative distance and distractor load. The first 240-run grid reproduced the predicted attenuation, delay, and distraction effects, with documented floor effects at longer paths. No perspective-switching mechanism has been implemented yet.
+
+Run the fully reproducible baseline with:
+
+```text
+make reproduce
+```
 
 ## Documentation map
 

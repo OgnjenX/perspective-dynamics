@@ -12,6 +12,9 @@ This file records consequential scientific and repository decisions. Decisions m
 | D006 | 2026-08-13 | Accepted | Use a claim ladder and explicit disconfirmation criteria. | Prevents a narrow simulation result from being described as a general theory of creativity. | Never; individual criteria may be refined prospectively. |
 | D007 | 2026-08-13 | Provisional | Consider Grossberg/ART-style competition, adaptation, vigilance, and mismatch/reset as candidate mechanisms. | They offer plausible control motifs but are not yet uniquely supported. | After minimal adaptive switching is characterized. |
 | D008 | 2026-08-13 | Accepted | Configure the intended GitHub remote but do not publish in this phase. | “Prepare for publishing” is distinct from making an external repository public. | Owner approves the documentation and requests publication. |
+| D009 | 2026-08-13 | Accepted | Begin implementation with a dependency-free fixed-frame spreading-activation baseline. | Establishes the behavior and limits of ordinary association before adding perspectives. | EXP001 fails validation or cannot express the intended baseline. |
+| D010 | 2026-08-13 | Accepted | Manipulate path length and distractor load in EXP001. | These factors provide transparent tests of propagation depth and competitive dilution without perspective switching. | Results reveal a confound or ceiling/floor effect. |
+| D011 | 2026-08-13 | Accepted | Treat EXP001 as model validation, not a creativity test. | The task measures fixed-graph accessibility and cannot establish novelty, usefulness, or reframing. | Never; later experiments receive separate claims. |
 
 ## Decision template
 

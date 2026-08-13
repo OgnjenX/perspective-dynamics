@@ -43,3 +43,35 @@ No implementation, simulation, dataset, analysis output, or empirical finding ex
 ### Next step after review
 
 Revise and freeze the Week 1 framing. Only then specify the minimal mathematical model and baseline experiment. Any changes to hypotheses or primary measures after observing results must be logged as exploratory.
+
+## 2026-08-13 — Phase 1 baseline specification
+
+### Decision
+
+The Week 1 framing was judged a reasonable starting point. Phase 1 begins with a fixed-representation spreading-activation model and EXP001; perspective switching remains deliberately excluded.
+
+### Prospective experiment
+
+EXP001 crosses cue-to-goal path length with distractor load over fixed seeds. It tests whether the model exhibits the expected attenuation, delay, and competition effects. The goal is implementation validation and baseline characterization, not evidence of creativity.
+
+### Publication status
+
+Public GitHub publication was authorized, but the local GitHub CLI credential for `OgnjenX` was found to be expired before any external write. Local research work can continue; publication requires re-authentication.
+
+## 2026-08-13 — EXP001 first validated run
+
+### Validation
+
+Eight unit tests passed. The fixed parameter grid produced 240 raw runs and 12 aggregated conditions using only Python 3.11 standard-library runtime dependencies.
+
+### Result
+
+The expected baseline limitation appeared. All path-length-2 conditions succeeded, but threshold crossing slowed and peak goal activation fell with distractor load. At path length 4, zero and one distractor per path node succeeded; three distractors produced complete threshold failure. Path lengths 6 and 8 remained at the activation floor within 120 steps.
+
+### Interpretation
+
+The result validates that the fixed-frame model expresses propagation depth and competitive dilution. It does not test creativity or perspective advantage. The complete floor for longer paths is a design constraint for Phase 2: report continuous activation and rank alongside success, and ensure useful versus irrelevant frames produce controlled differences rather than an uninformative ceiling/floor comparison.
+
+### Next step
+
+Specify a perspective manipulation over shared nodes in which relational edges—not factual content or compute budget—change. Predefine fixed-useful, fixed-initial, random-switching, and adaptive-switching controls before implementation.
