@@ -51,11 +51,14 @@ def run_schedule(
         raise ValueError("schedule length must equal configured steps")
     if not set(schedule).issubset(family.frames):
         raise ValueError("schedule contains an unknown perspective")
+    models = {
+        name: SpreadingActivationModel(graph, config)
+        for name, graph in family.frames.items()
+    }
     state = {node: 0.0 for node in next(iter(family.frames.values())).nodes}
     trajectory: list[Mapping[str, float]] = [dict(state)]
     for frame in schedule:
-        model = SpreadingActivationModel(family.frames[frame], config)
-        state = model.step(state, family.cue)
+        state = models[frame].step(state, family.cue)
         trajectory.append(dict(state))
     return ScheduledResult(
         simulation=SimulationResult(
@@ -78,6 +81,10 @@ def run_adaptive_mismatch(
     remaining = [name for name in family.frames if name != "initial"]
     rng.shuffle(remaining)
     exploration_order = ["initial", *remaining]
+    models = {
+        name: SpreadingActivationModel(graph, config)
+        for name, graph in family.frames.items()
+    }
     frame_index = 0
     schedule: list[str] = []
     state = {node: 0.0 for node in next(iter(family.frames.values())).nodes}
@@ -85,9 +92,7 @@ def run_adaptive_mismatch(
     block_values: list[float] = []
     for step in range(config.steps):
         frame = exploration_order[frame_index]
-        state = SpreadingActivationModel(family.frames[frame], config).step(
-            state, family.cue
-        )
+        state = models[frame].step(state, family.cue)
         schedule.append(frame)
         trajectory.append(dict(state))
         block_values.append(state[family.goal])

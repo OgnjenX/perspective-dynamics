@@ -132,3 +132,44 @@ def build_matched_path_perspectives(
         frames[name] = AssociativeGraph.undirected(ordering, edges)
 
     return PerspectiveFamily(frames=frames, cue={"cue": 1.0}, goal="goal", seed=seed)
+
+
+def add_uniform_branches(
+    family: PerspectiveFamily,
+    *,
+    branches_per_core_node: int,
+    edge_weight_min: float,
+    edge_weight_max: float,
+    seed_offset: int = 100_000,
+) -> PerspectiveFamily:
+    """Attach the same number of matched leaf relations to every core item."""
+
+    if branches_per_core_node < 1:
+        raise ValueError("branches_per_core_node must be at least one")
+    if edge_weight_min <= 0 or edge_weight_max < edge_weight_min:
+        raise ValueError("edge-weight bounds must be positive and ordered")
+
+    core_nodes = next(iter(family.frames.values())).nodes
+    rng = Random(family.seed + seed_offset)
+    branch_specs = [
+        (
+            core,
+            f"leaf_{core}_{branch_index}",
+            rng.uniform(edge_weight_min, edge_weight_max),
+        )
+        for core in core_nodes
+        for branch_index in range(branches_per_core_node)
+    ]
+    frames: dict[str, AssociativeGraph] = {}
+    for name, graph in family.frames.items():
+        adjacency = {
+            node: dict(neighbors) for node, neighbors in graph.adjacency.items()
+        }
+        for core, leaf, weight in branch_specs:
+            adjacency.setdefault(leaf, {})
+            adjacency[core][leaf] = weight
+            adjacency[leaf][core] = weight
+        frames[name] = AssociativeGraph(adjacency=adjacency)
+    return PerspectiveFamily(
+        frames=frames, cue=dict(family.cue), goal=family.goal, seed=family.seed
+    )

@@ -59,6 +59,34 @@ class SpreadingActivationTests(unittest.TestCase):
         )
         self.assertNotIn(task.goal, task.cue)
 
+    def test_rejects_unknown_propagation_rule(self) -> None:
+        with self.assertRaisesRegex(ValueError, "propagation_rule"):
+            DynamicsConfig(propagation_rule="unknown")
+
+    def test_symmetric_normalization_uses_both_endpoint_strengths(self) -> None:
+        graph = AssociativeGraph.undirected(
+            ["a", "b", "c"], [("a", "b", 1.0), ("b", "c", 1.0)]
+        )
+        state = {"a": 1.0, "b": 0.0, "c": 0.0}
+        source = SpreadingActivationModel(
+            graph,
+            DynamicsConfig(
+                time_step=1.0, decay_rate=0.0, propagation_gain=1.0,
+                input_gain=0.0, global_inhibition=0.0, steps=1,
+                propagation_rule="source_normalized",
+            ),
+        ).step(state, {})
+        symmetric = SpreadingActivationModel(
+            graph,
+            DynamicsConfig(
+                time_step=1.0, decay_rate=0.0, propagation_gain=1.0,
+                input_gain=0.0, global_inhibition=0.0, steps=1,
+                propagation_rule="symmetric_normalized",
+            ),
+        ).step(state, {})
+        self.assertEqual(source["b"], 1.0)
+        self.assertAlmostEqual(symmetric["b"], 2 ** -0.5)
+
 
 if __name__ == "__main__":
     unittest.main()
