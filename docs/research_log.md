@@ -341,3 +341,10 @@ exhaustive ordering checks, provenance, and a matched ordinary planner.
 If ordinary forward planning with the same operators reproduces the result,
 the project will record that the current mechanism is not yet distinct from
 ordinary planning. Structural success alone will not open the biological phase.
+
+### Pre-execution EXP010 amendment
+
+Before generating results, add a matched-capacity sham integration condition.
+It replaces the valid bridge with an equally sized, applicable rule whose
+effect is irrelevant to the goal. This prevents the static-union comparison
+from attributing success merely to one additional operator or transition.

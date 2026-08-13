@@ -41,6 +41,7 @@ This file records consequential scientific and repository decisions. Decisions m
 | D035 | 2026-08-13 | Accepted | Freeze the revised Level 1 principle as explicit relational schema composition before implementing neural dynamics. | Separating computational sufficiency from biological mechanism makes the composition claim interpretable and falsifiable. | After EXP008 and matched held-out composition tests are reviewed. |
 | D036 | 2026-08-13 | Accepted | Gate biological interpretation on EXP009 relational generalization and EXP010 explicit integration tests. | EXP008 is hand-designed and may be ordinary planning; abstraction, matched controls, counterfactual necessity, and planner equivalence must be tested first. | EXP009 and EXP010 report their frozen criteria. |
 | D037 | 2026-08-13 | Accepted | Treat equivalence with a matched ordinary forward planner as failure of the claim that the current mechanism is computationally distinct from planning. | Renaming forward chaining as perspective integration would not establish a new computational principle. | A prospective model introduces a measurable operation or constraint unavailable to the matched planner. |
+| D038 | 2026-08-13 | Accepted | Add a matched-capacity sham integration rule to EXP010 before execution. | Static union has one fewer operator than the integration condition; a sham bridge matches operator count and transition opportunity while withholding task-valid alignment. | EXP010 reports H10.6. |
 
 ## Decision template
 

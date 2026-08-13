@@ -29,6 +29,13 @@ An ordinary forward planner given the same integration rule and budget must be
 reported. If it is behaviorally equivalent, the experiment demonstrates an
 explicit bridging operator but not a computational primitive beyond planning.
 
-The structural emergence conjunction is H10.1–H10.4 plus ordering invariance.
+## H10.6 — Matched-capacity sham integration
+
+A control with the same number of schemas and an integration-shaped rule must
+fail when that rule produces a relation irrelevant to the goal. This matches
+operator count and the opportunity for one additional transition while
+removing task-valid cross-perspective alignment.
+
+The structural emergence conjunction is H10.1–H10.4, H10.6, and ordering invariance.
 The broader distinctiveness claim additionally requires non-equivalence to the
 ordinary planner.
