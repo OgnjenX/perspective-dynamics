@@ -1,0 +1,8 @@
+{
+  "environments": ["construction", "garden", "warehouse"],
+  "test_all_schema_permutations": true,
+  "required_plan_length": 4,
+  "require_all_integration_success": true,
+  "require_all_single_static_union_and_counterfactual_failure": true,
+  "report_ordinary_planner_equivalence_separately": true
+}

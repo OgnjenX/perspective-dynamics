@@ -315,3 +315,29 @@ The same world and schemas are evaluated with structured composition, single-per
 ### Interpretation boundary
 
 Any positive result is an implementation demonstration on a toy world. It does not establish learning, biological plausibility, or creativity. Held-out object renaming, schema-order, and matched-capacity tests remain required before treating the principle as robust.
+
+## 2026-08-13 — EXP009 and EXP010 prospective design freeze
+
+### Milestone
+
+Testing Genuine Compositional Emergence begins after merging the EXP008 Level 1
+prototype. Biological interpretation remains closed.
+
+### EXP009
+
+Test role-annotated abstraction across three held-out environments and paired
+object-name scrambling. Freeze single-perspective, no-chaining pool, random
+selection, and perspective-erased ordinary-planning controls. Relational
+generalization and distinctiveness from planning are separate criteria.
+
+### EXP010
+
+Require an explicit cross-perspective relation that is absent from each
+perspective and from their static union. Freeze schema-removal counterfactuals,
+exhaustive ordering checks, provenance, and a matched ordinary planner.
+
+### Falsification commitment
+
+If ordinary forward planning with the same operators reproduces the result,
+the project will record that the current mechanism is not yet distinct from
+ordinary planning. Structural success alone will not open the biological phase.
