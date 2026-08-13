@@ -107,3 +107,39 @@ The equal blend and useful frame both had a two-edge shortest cue-to-goal path a
 ### Interpretation and next test
 
 The pattern suggests selective framing may reduce cross-frame interference rather than merely add useful relations. Because the mixed graph has higher local degree and the model normalizes outgoing propagation, the effect may be a normalization artifact. A prospective control must match local degree/flow or vary normalization before treating selective gating as a broader result.
+
+## 2026-08-13 — EXP003 prospective design
+
+### Question
+
+Can mismatch-responsive switching outperform random frame assignment when switch timing and count are identical?
+
+### Frozen mechanism
+
+The controller evaluates maximum goal activation only at 15-step block boundaries. Lack of task-valid signal triggers exploration of another frame; detectable progress triggers continued dwell. The signal controls frame selection but is not injected into associative activation.
+
+### Primary control
+
+For each seed, random replay inherits the adaptive schedule’s exact segment lengths, switch times, and switch count while randomizing later frame identities without evaluation. This directly tests whether task-coupled dwell—not merely reduced switching—produces an advantage.
+
+### Claim boundary
+
+Even a positive result would represent evaluation-gated search with synthetic frames. It would not establish unsupervised creativity, psychological perspective taking, metastable neural dynamics, or biological plausibility.
+
+## 2026-08-13 — EXP003 first validated run
+
+### Integrity
+
+All 100 adaptive/replay pairs matched switch times and counts exactly. Fourteen unit tests passed, and 700 policy runs were generated.
+
+### Result
+
+Adaptive mismatch switching succeeded in every seed versus 76% for schedule-matched replay. Mean peak activation increased by 0.56774184. Adaptive policies allocated 50.85 more steps to the useful frame on average, despite identical segment timing.
+
+### Interpretation
+
+Task-valid feedback improved which frame occupied the available dwell segments. This supports H2’s structured-switching direction under supervised evaluation, but it is not evidence for unguided creativity or biology. The outcome is consistent with the controller design and is not claimed as novel.
+
+### Next test
+
+Prospectively sweep dwell/decision times to test the stronger metastability prediction: very short dwell should prevent evidence accumulation, while very long dwell should delay escape. An intermediate optimum must reproduce across seeds and evaluation thresholds before it is treated as interesting.
