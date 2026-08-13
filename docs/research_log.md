@@ -175,3 +175,17 @@ The observed optimal block increased from 3 to 5 to 10 as evaluation threshold i
 ### Next step
 
 Use held-out seeds and a denser threshold/block grid to test whether optimal dwell is monotonically related to evidence requirement. Only after replication should it inform a self-timed dynamical controller.
+
+## 2026-08-13 — EXP005 confirmatory design
+
+### Discovery claim being tested
+
+EXP004 suggested that stricter evaluation thresholds move the performance-optimal dwell interval later.
+
+### Held-out confirmation
+
+Use 200 unseen seeds (1,000–1,199), 12 block lengths, and seven thresholds for 16,800 runs. Confirmation requires Spearman rank correlation at least 0.8 between threshold and selected optimal block, with at most one adjacent reversal. Both criteria are fixed before implementation.
+
+### Claim boundary
+
+Confirmation would establish a model-specific evidence–dwell calibration. Generality across task geometries, propagation rules, and self-timed biological dynamics remains untested.
