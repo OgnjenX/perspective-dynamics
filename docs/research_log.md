@@ -107,3 +107,21 @@ The equal blend and useful frame both had a two-edge shortest cue-to-goal path a
 ### Interpretation and next test
 
 The pattern suggests selective framing may reduce cross-frame interference rather than merely add useful relations. Because the mixed graph has higher local degree and the model normalizes outgoing propagation, the effect may be a normalization artifact. A prospective control must match local degree/flow or vary normalization before treating selective gating as a broader result.
+
+## 2026-08-13 — EXP003 prospective design
+
+### Question
+
+Can mismatch-responsive switching outperform random frame assignment when switch timing and count are identical?
+
+### Frozen mechanism
+
+The controller evaluates maximum goal activation only at 15-step block boundaries. Lack of task-valid signal triggers exploration of another frame; detectable progress triggers continued dwell. The signal controls frame selection but is not injected into associative activation.
+
+### Primary control
+
+For each seed, random replay inherits the adaptive schedule’s exact segment lengths, switch times, and switch count while randomizing later frame identities without evaluation. This directly tests whether task-coupled dwell—not merely reduced switching—produces an advantage.
+
+### Claim boundary
+
+Even a positive result would represent evaluation-gated search with synthetic frames. It would not establish unsupervised creativity, psychological perspective taking, metastable neural dynamics, or biological plausibility.
