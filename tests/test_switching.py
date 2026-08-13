@@ -3,7 +3,11 @@ from random import Random
 
 from perspective_dynamics.associative import DynamicsConfig
 from perspective_dynamics.perspectives import build_matched_path_perspectives
-from perspective_dynamics.switching import replay_schedule, run_adaptive_mismatch
+from perspective_dynamics.switching import (
+    replay_schedule,
+    run_adaptive_mismatch,
+    run_self_timed_mismatch,
+)
 
 
 class SwitchingTests(unittest.TestCase):
@@ -38,6 +42,32 @@ class SwitchingTests(unittest.TestCase):
             [length for _, length in adaptive.segments],
             [length for _, length in replay_segments],
         )
+
+    def test_self_timed_schedule_has_configured_length(self) -> None:
+        result = run_self_timed_mismatch(
+            self.family,
+            DynamicsConfig(steps=37),
+            patience_steps=5,
+            evaluation_threshold=0.01,
+            solution_threshold=0.01,
+            progress_credit=1.0,
+            normalization_epsilon=1e-12,
+            rng=Random(9),
+        )
+        self.assertEqual(len(result.schedule), 37)
+
+    def test_adaptation_only_uses_intrinsic_patience(self) -> None:
+        result = run_self_timed_mismatch(
+            self.family,
+            DynamicsConfig(steps=30),
+            patience_steps=5,
+            evaluation_threshold=0.01,
+            solution_threshold=0.01,
+            progress_credit=0.0,
+            normalization_epsilon=1e-12,
+            rng=Random(9),
+        )
+        self.assertTrue(all(length == 5 for _, length in result.segments))
 
 
 if __name__ == "__main__":

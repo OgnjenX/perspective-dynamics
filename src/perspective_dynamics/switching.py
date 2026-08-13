@@ -122,6 +122,72 @@ def replay_schedule(
     )
 
 
+def run_self_timed_mismatch(
+    family: PerspectiveFamily,
+    config: DynamicsConfig,
+    *,
+    patience_steps: int,
+    evaluation_threshold: float,
+    solution_threshold: float,
+    progress_credit: float,
+    normalization_epsilon: float,
+    rng: Random,
+) -> ScheduledResult:
+    """Switch when continuously accumulated mismatch reaches one.
+
+    Adaptation adds ``1 / patience_steps`` every model step. Positive change
+    in goal evidence subtracts normalized progress credit, allowing useful
+    trajectories to prolong their realized dwell without periodic decisions.
+    """
+
+    if patience_steps < 1:
+        raise ValueError("patience_steps must be at least one")
+    if evaluation_threshold <= 0 or solution_threshold <= 0:
+        raise ValueError("evaluation and solution thresholds must be positive")
+    if progress_credit < 0:
+        raise ValueError("progress_credit cannot be negative")
+    if normalization_epsilon <= 0:
+        raise ValueError("normalization_epsilon must be positive")
+
+    remaining = [name for name in family.frames if name != "initial"]
+    rng.shuffle(remaining)
+    exploration_order = ["initial", *remaining]
+    models = {
+        name: SpreadingActivationModel(graph, config)
+        for name, graph in family.frames.items()
+    }
+    frame_index = 0
+    mismatch = 0.0
+    previous_evidence = 0.0
+    schedule: list[str] = []
+    state = {node: 0.0 for node in next(iter(family.frames.values())).nodes}
+    trajectory: list[Mapping[str, float]] = [dict(state)]
+    for _ in range(config.steps):
+        frame = exploration_order[frame_index]
+        state = models[frame].step(state, family.cue)
+        evidence = state[family.goal]
+        positive_progress = max(0.0, evidence - previous_evidence) / (
+            evaluation_threshold + normalization_epsilon
+        )
+        mismatch = max(
+            0.0,
+            mismatch + 1.0 / patience_steps - progress_credit * positive_progress,
+        )
+        schedule.append(frame)
+        trajectory.append(dict(state))
+        if mismatch >= 1.0:
+            frame_index = (frame_index + 1) % len(exploration_order)
+            mismatch = 0.0
+        previous_evidence = evidence
+    return ScheduledResult(
+        simulation=SimulationResult(
+            trajectory=tuple(trajectory), goal=family.goal,
+            threshold=solution_threshold, cue_nodes=tuple(sorted(family.cue))
+        ),
+        schedule=tuple(schedule),
+    )
+
+
 def blocked_schedule(
     *, frame_names: Sequence[str], steps: int, block_steps: int,
     rng: Random, periodic: bool
