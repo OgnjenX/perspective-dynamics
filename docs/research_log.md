@@ -75,3 +75,17 @@ The result validates that the fixed-frame model expresses propagation depth and 
 ### Next step
 
 Specify a perspective manipulation over shared nodes in which relational edges—not factual content or compute budget—change. Predefine fixed-useful, fixed-initial, random-switching, and adaptive-switching controls before implementation.
+
+## 2026-08-13 — EXP002 prospective design
+
+### Question
+
+Does relational geometry alone change solution accessibility when nodes, edge count, edge weights, degree profile, dynamics, cue input, and compute are matched?
+
+### Frozen design
+
+Use three weighted-path frames over the same ten nodes. Their only intended difference is node ordering, which places the goal two, six, or eight edges from the cue. Compare each fixed frame and an equal matrix blend across 50 seeds. Reuse the validated EXP001 dynamics unchanged.
+
+### Claim boundary
+
+EXP002 can validate the perspective-matrix manipulation and the minimal geometry effect. It cannot show that the system discovers or adaptively selects a useful frame. Those are reserved for EXP003.
