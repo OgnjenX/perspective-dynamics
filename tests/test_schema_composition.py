@@ -33,6 +33,11 @@ class SchemaCompositionTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             RelationalSchema("", "support", (("a",),), (("b",),), "act")
 
+    def test_rejects_unimplemented_random_control(self) -> None:
+        world, schemas, goal = demo_world()
+        with self.assertRaisesRegex(ValueError, "compose, single, or pool"):
+            SchemaCompositionEngine(schemas).solve(world, goal, mode="random")
+
     def test_world_is_immutable_and_normalized(self) -> None:
         world = RelationalWorld.from_facts([["a", "b"], ["a", "b"]])
         self.assertEqual(world.facts, frozenset({("a", "b")}))

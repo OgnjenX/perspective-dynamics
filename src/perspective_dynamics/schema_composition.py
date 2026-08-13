@@ -86,9 +86,10 @@ class SchemaCompositionEngine:
 
     ``mode='compose'`` matches schema effects to later prerequisites.  The
     baseline modes intentionally restrict that operation for comparison:
-    ``single`` accesses one perspective, ``pool`` exposes all schemas but
-    cannot use newly produced facts, and ``random`` shuffles candidates while
-    retaining the same no-composition restriction.
+    ``single`` accesses one perspective, while ``pool`` exposes all schemas
+    but cannot use newly produced facts.  A genuine randomized-composition
+    control is intentionally deferred to EXP009, where its sampling policy and
+    compute budget can be specified prospectively.
     """
 
     def __init__(self, schemas: Iterable[RelationalSchema]) -> None:
@@ -104,8 +105,8 @@ class SchemaCompositionEngine:
         perspectives: tuple[str, ...] | None = None,
         mode: str = "compose",
     ) -> CompositionResult:
-        if mode not in {"compose", "single", "pool", "random"}:
-            raise ValueError("mode must be compose, single, pool, or random")
+        if mode not in {"compose", "single", "pool"}:
+            raise ValueError("mode must be compose, single, or pool")
         allowed = set(perspectives) if perspectives is not None else None
         schemas = tuple(
             schema for schema in self.schemas
@@ -141,7 +142,7 @@ class SchemaCompositionEngine:
                         return CompositionResult(True, goal, new_facts, new_steps, explored, "goal reached")
                     # The baselines expose stored facts but do not compose
                     # effects into later prerequisites.
-                    if mode in {"pool", "random"}:
+                    if mode == "pool":
                         continue
                     frontier.append((new_facts, new_steps))
         return CompositionResult(False, goal, world.facts, (), explored, "no compositional plan")
