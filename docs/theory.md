@@ -8,19 +8,19 @@ This document is a working conceptual model, not an established biological theor
 
 A perspective is a control state that changes the effective computation performed over otherwise shared knowledge. Reframing therefore means changing the dynamics through which the current knowledge state evolves.
 
-Let \(x\) denote a neural or model population state, \(u\) the problem input, and \(p\) the active perspective:
+Let `x` denote a neural or model population state, `u` the problem input, and `p` the active perspective:
 
-\[
-\tau \dot{x}=-x+\phi(W(p)x+Uu+b)+\xi(t).
-\]
+```text
+τ dx/dt = −x + φ(W(p)x + Uu + b) + ξ(t)
+```
 
 A minimal parameterization is
 
-\[
-W(p)=W_0+\sum_k p_k W_k,
-\]
+```text
+W(p) = W₀ + Σₖ pₖWₖ
+```
 
-where \(W_0\) contains shared relations and each \(W_k\) contributes perspective-specific relations. For example, separate components might emphasize function, shape, material, causal role, or another agent’s goal. This equation is a modeling proposal, not a claim that cortical connectivity is literally rebuilt whenever perspective changes; fast modulation, gating, gain control, or readout changes could alter effective connectivity.
+where `W₀` contains shared relations and each `Wₖ` contributes perspective-specific relations. For example, separate components might emphasize function, shape, material, causal role, or another agent’s goal. This equation is a modeling proposal, not a claim that cortical connectivity is literally rebuilt whenever perspective changes; fast modulation, gating, gain control, or readout changes could alter effective connectivity.
 
 ## Functional architecture
 
@@ -47,7 +47,7 @@ Feedback is essential: failure to make progress can destabilize the current pers
 
 ## Three mechanistic strengths
 
-1. **Readout switching:** \(y_p=D_p x\). A different decoder interprets a largely unchanged internal state.
+1. **Readout switching:** `yₚ = Dₚx`. A different decoder interprets a largely unchanged internal state.
 2. **Subspace gating or rotation:** context amplifies relevant axes and suppresses others, changing effective distances and generalization.
 3. **Attractor-landscape restructuring:** contextual modulation changes the vector field, stability, basins, and transition probabilities.
 
@@ -55,24 +55,16 @@ These mechanisms should be compared rather than conflated. The strongest version
 
 ## Why geometry could help
 
-Suppose knowledge item \(z_i\) has a perspective-dependent representation
+Suppose knowledge item `zᵢ` has a perspective-dependent representation:
 
-\[
-r_i^{(p)}=E_p(z_i), \qquad
-d_p(z_i,z_j)=\lVert E_p(z_i)-E_p(z_j)\rVert.
-\]
+```text
+rᵖᵢ = Eₚ(zᵢ)
+dₚ(zᵢ, zⱼ) = ‖Eₚ(zᵢ) − Eₚ(zⱼ)‖
+```
 
 Locally biased associative processes can fail when the solution is remote under the current metric. A useful frame can bring a task-relevant relation closer without adding the solution to memory. The computational sequence is:
 
-\[
-\text{frame selection}
-\rightarrow
-\text{search/elaboration within frame}
-\rightarrow
-\text{cross-frame integration}
-\rightarrow
-\text{evaluation}.
-\]
+> **Frame selection → search/elaboration within frame → cross-frame integration → evaluation.**
 
 The integration and evaluation steps prevent “more perspectives” from being equated with creativity.
 

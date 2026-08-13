@@ -14,13 +14,7 @@ This project tests a more specific proposal:
 
 Under this proposal, a perspective changes which relations are emphasized, which states are nearby, which trajectories are reachable, and which candidate solutions are stable. The proposed causal chain is:
 
-\[
-\text{perspective change}
-\rightarrow
-\text{effective geometry/dynamics change}
-\rightarrow
-\text{new solution accessibility}.
-\]
+> **Perspective change → effective geometry/dynamics change → new solution accessibility.**
 
 ## Operational definitions
 

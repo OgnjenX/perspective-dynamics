@@ -10,19 +10,19 @@ Can creativity emerge from neural systems that dynamically change the representa
 
 A creative solution may not require finding a new path through a fixed representation. It may instead become reachable when a system changes the geometry and dynamics of its internal representation.
 
-A fixed-frame system can be written schematically as
+A fixed-frame system can be written schematically as:
 
-\[
-\dot{x}=F(x),
-\]
+```text
+dx/dt = F(x)
+```
 
-whereas a perspective-dependent system is
+A perspective-dependent system is:
 
-\[
-\dot{x}=F(x,p),
-\]
+```text
+dx/dt = F(x, p)
+```
 
-where \(x\) is the system state and \(p\) is the active perspective or context. The claim to test is that changing \(p\) can alter effective distances, transition paths, and attractor accessibility—not merely add noise or more information.
+Here, `x` is the system state and `p` is the active perspective or context. The claim to test is that changing `p` can alter effective distances, transition paths, and attractor accessibility—not merely add noise or more information.
 
 ## Long-term goal
 
