@@ -22,15 +22,31 @@ Representational Change Theory proposed that impasses can be broken through cons
 
 Cognitive and behavioral flexibility depends on distributed lateral/orbital frontoparietal, midcingulo-insular, and frontostriatal systems across human and animal evidence [8].
 
+The dual-pathway account distinguishes flexibility across idea categories from persistent exploration within a category; either route can support originality under different conditions [14]. This cautions against treating frame count or switching frequency as creativity by itself.
+
 **Implication:** generic flexibility is a strong alternative explanation. Experiments need matched task-switching and perturbation controls to isolate perspective-specific transformation.
 
-## 4. Representational geometry
+## 4. Perspective diversity and collaboration
+
+The relationship between team diversity and creativity is conditional rather than automatic. In a controlled team study, diverse teams were more creative when members were instructed to take one another’s perspectives; information elaboration mediated the benefit more strongly than information sharing or task conflict [15].
+
+**Implication:** separate people cannot be assumed to supply useful task-relevant perspectives merely by definition. The project must measure frame diversity and distinguish cross-perspective elaboration and integration from headcount, pooled information, independent generation, and voting.
+
+## 5. Representational geometry and context-dependent computation
 
 Population-level representational geometry links multivariate response patterns to decodability, information, and behavior, while remaining compatible with multiple underlying tuning schemes [9].
 
+Prefrontal mixed selectivity distributes information about combinations of task variables across populations and expands the repertoire of implementable input-output mappings [16]. Context-dependent selection and integration can also emerge as a recurrent population dynamical process rather than from isolated context-labelled neurons [17].
+
 **Implication:** geometry supplies quantitative language, not automatic mechanism. Metrics should be preregistered, cross-validated, and connected to behavior or intervention.
 
-## 5. Dynamical systems and biological grounding: open map
+## 6. Hippocampal relational maps
+
+Human neuroimaging indicates that hippocampus, entorhinal cortex, and ventromedial prefrontal/orbitofrontal cortex organize abstract relational information to support novel inferences [18]. A later reanalysis found anatomically distinct hippocampal-formation maps for different relational structures over objects, consistent with parallel cognitive maps rather than one mandatory conjunctive map [19].
+
+**Implication:** hippocampal-entorhinal mapping is a plausible candidate for representing multiple relations over shared content, while prefrontal systems may contribute task-state selection and control. This is a biological hypothesis for later tests, not evidence that the current synthetic frames are hippocampal perspectives.
+
+## 7. Dynamical systems and biological grounding: open map
 
 Topics for the next review pass:
 
@@ -44,7 +60,7 @@ Topics for the next review pass:
 
 These categories are intentionally marked open; Week 1 does not claim a complete synthesis.
 
-## 6. Central gap
+## 8. Central gap
 
 Current work supports dynamic network interaction, cognitive restructuring, and geometry-sensitive population analysis, but does not yet establish the full causal chain proposed here:
 
@@ -52,7 +68,7 @@ Current work supports dynamic network interaction, cognitive restructuring, and 
 
 The project’s contribution would be to formalize and test this chain against search, noise, information, task-switching, and readout-only explanations.
 
-## 7. Stability, flexibility, and dwell-time control
+## 9. Stability, flexibility, and dwell-time control
 
 The stability–flexibility dilemma is established beyond creativity: cognitive control must protect a task from distraction while retaining readiness to switch, and these functions may be regulated by learning from recent demand and recognized context [10]. In creativity experiments, autonomous choices about when to shift or dwell can support originality more effectively than instructed regular shifting [11]. Recent neural-network work also proposes that controlling metastable-state stability can flexibly modulate cognitive processing speed as task difficulty, attention, or expectation changes [12]. Creative storytelling has been associated with dynamic cycles between spontaneous and deliberate brain states [13].
 
@@ -86,6 +102,18 @@ These findings make dwell regulation scientifically plausible, but they do not d
 
 [13] X. Liang, M. Cai, G. Jing, C. Zhang, E. S. Nichols, and L. Liu (2025), “Dynamic cycles between brain states during creative storytelling,” *NeuroImage*, 121053. 3 citations. [Consensus record](https://consensus.app/papers/dynamic-cycles-between-brain-states-during-creative-liang-cai/c2354cc3ec88506693edd2c5a7b00075/?utm_source=chatgpt)
 
+[14] B. A. Nijstad, C. K. W. De Dreu, E. F. Rietzschel, and M. Baas (2010), “The dual pathway to creativity model: Creative ideation as a function of flexibility and persistence,” *European Review of Social Psychology* 21, 34–77. 973 citations. [Consensus record](https://consensus.app/papers/the-dual-pathway-to-creativity-model-creative-ideation-as-a-nijstad-dreu/98ffb70cb8ad52b2a0cdaa3e5bbea47e/?utm_source=chatgpt)
+
+[15] I. J. Hoever, D. van Knippenberg, W. P. van Ginkel, and H. G. Barkema (2012), “Fostering team creativity: Perspective taking as key to unlocking diversity’s potential,” *Journal of Applied Psychology* 97, 982–996. 652 citations. [Consensus record](https://consensus.app/papers/fostering-team-creativity-perspective-taking-as-key-to-hoever-knippenberg/fe5683b2ca6255efb38cd0c4b6a2a767/?utm_source=chatgpt)
+
+[16] M. Rigotti et al. (2013), “The importance of mixed selectivity in complex cognitive tasks,” *Nature* 497, 585–590. 1,640 citations. [Consensus record](https://consensus.app/papers/the-importance-of-mixed-selectivity-in-complex-cognitive-rigotti-barak/97a2da212d8355a7adcbd1fd2848bda8/?utm_source=chatgpt)
+
+[17] V. Mante, D. Sussillo, K. V. Shenoy, and W. T. Newsome (2013), “Context-dependent computation by recurrent dynamics in prefrontal cortex,” *Nature* 503, 78–84. 1,888 citations. [Consensus record](https://consensus.app/papers/contextdependent-computation-by-recurrent-dynamics-in-mante-sussillo/2c2c49fbe87e534a85f3a612c1824f44/?utm_source=chatgpt)
+
+[18] S. A. Park, D. S. Miller, H. Nili, C. Ranganath, and E. D. Boorman (2020), “Map making: Constructing, combining, and inferring on abstract cognitive maps,” *Neuron* 107, 1226–1238.e8. 183 citations. [Consensus record](https://consensus.app/papers/map-making-constructing-combining-and-inferring-on-park-miller/ca2920f32e6f5d379f9eae1ade82a31e/?utm_source=chatgpt)
+
+[19] X. Y. Zheng et al. (2024), “Parallel cognitive maps for multiple knowledge structures in the hippocampal formation,” *Cerebral Cortex* 34. 14 citations. [Consensus record](https://consensus.app/papers/parallel-cognitive-maps-for-multiple-knowledge-zheng-hebart/9f5a5b3c33175ba4a16fa84adc6fd76d/?utm_source=chatgpt)
+
 ## Search record
 
-Consensus keyword searches on 2026-08-13 covered: creativity with dynamic DMN/ECN/salience connectivity; insight and representational change; neural population dynamics, geometry, cognitive flexibility, perspective taking; stability/flexibility; shift-versus-dwell creativity; metastable duration; and evidence-threshold timing. Full paper records were fetched before inclusion. A later systematic review should record databases, exact queries, dates, inclusion criteria, screening decisions, and risk-of-bias assessment.
+Consensus keyword searches on 2026-08-13 covered: creativity with dynamic DMN/ECN/salience connectivity; insight and representational change; neural population dynamics, geometry, cognitive flexibility, perspective taking; team diversity and information elaboration; hippocampal relational and parallel cognitive maps; prefrontal mixed selectivity and context-dependent dynamics; stability/flexibility; shift-versus-dwell creativity; metastable duration; and evidence-threshold timing. Full paper records were fetched before inclusion. A later systematic review should record databases, exact queries, dates, inclusion criteria, screening decisions, and risk-of-bias assessment.

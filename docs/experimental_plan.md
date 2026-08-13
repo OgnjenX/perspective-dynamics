@@ -56,15 +56,33 @@ Analyze rather than merely visualize:
 
 All primary metrics must be selected before inspecting test-condition outcomes.
 
-## Phase 5 — Robustness and biological grounding
+## Phase 5 — Perspective repertoire and distributed collaboration
+
+Systematically vary the number, distance, redundancy, and accessibility of frames while holding factual content, model capacity, compute, and evaluation opportunity constant.
+
+Compare:
+
+1. one single-frame system;
+2. one system with several selectable frames;
+3. several single-frame systems without communication;
+4. several single-frame systems with pooled output only;
+5. several single-frame systems with explicit cross-frame elaboration and integration.
+
+Use synthetic agents first to isolate the computational claim. A later human study must measure task-relevant representational differences rather than infer perspective diversity from participant count or demographic categories.
+
+**Primary tests:** H1, H6, and H7.
+
+## Phase 6 — Robustness and biological grounding
 
 Reproduce the qualitative phenomenon across alternative dynamics only after it exists in the minimal model. Candidate implementations include shunting rate units, LIF, AdEx, inhibitory competition, adaptation, synaptic modulation, and mismatch/reset circuits (potentially in Brian2).
 
 **Primary test:** H5. Exact numerical equivalence is not expected; qualitative mechanisms, boundaries, and failure modes are.
 
-## Phase 6 — Empirical bridge (conditional)
+## Phase 7 — Empirical bridge (conditional)
 
 If earlier phases support the theory, design a human task with identical information but experimentally cued useful, irrelevant, or unchanged frames. Candidate measurements include behavioral trajectories, eye tracking, EEG/MEG, or fMRI representational analyses. This phase requires ethics review, power analysis, preregistration, and domain collaboration.
+
+A candidate neural design would teach participants two or more orthogonal relational structures over the same items, cue or permit switching among them, and test novel inference. Prospective neural predictions include decodable frame identity, frame-dependent representational geometry, and hippocampal-prefrontal interaction during map retrieval, switching, or integration. These predictions must remain separable from generic difficulty and task-switching effects.
 
 ## Week 2 candidate experiment (not yet implemented)
 
@@ -82,3 +100,9 @@ Before coding, freeze:
 ## Stop conditions
 
 Pause or revise the theory if perspective benefits vanish under matched compute/information controls, geometry metrics do not generalize out of sample, or results depend on post-hoc task construction. Such outcomes are informative and must be documented.
+
+## Current gate after EXP005
+
+EXP001–EXP005 establish mechanistic groundwork in a deliberately artificial model. They do not directly test the effective-repertoire, collaboration, or hippocampal hypotheses introduced after conceptual review. Preserve those results and their original claim boundaries.
+
+Before Phase 5, first attempt to falsify F001 across alternative graph structures, propagation rules, progress signals, and self-timed controllers. In parallel, preregister the repertoire manipulation and frame-distance metric without using EXP002–EXP005 outcomes to tune them. Biological implementation remains premature until at least one effect survives these controls.

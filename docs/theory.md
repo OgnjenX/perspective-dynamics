@@ -22,6 +22,44 @@ W(p) = W₀ + Σₖ pₖWₖ
 
 where `W₀` contains shared relations and each `Wₖ` contributes perspective-specific relations. For example, separate components might emphasize function, shape, material, causal role, or another agent’s goal. This equation is a modeling proposal, not a claim that cortical connectivity is literally rebuilt whenever perspective changes; fast modulation, gating, gain control, or readout changes could alter effective connectivity.
 
+## Perspective as a constrained transformation
+
+Let `K` denote controlled knowledge about a topic. A perspective is represented as a transformation `Tₚ`:
+
+```text
+Rₚ = Tₚ(K)
+```
+
+`Tₚ` does not need to add facts. It may instead reorganize which features, relations, predictions, or actions are accessible. This makes perspective narrower than generic context and more general than a literal spatial reference frame.
+
+Two candidate perspectives are meaningfully distinct only if they induce a reproducible difference in representation or computation over the same content. This criterion prevents post-hoc relabeling of arbitrary contextual changes as perspectives.
+
+## Effective perspective repertoire
+
+The stronger project hypothesis concerns not raw frame count but an effective repertoire. Its components are:
+
+- **coverage:** the task-relevant relational structures represented;
+- **distinctness:** nonredundancy among those structures;
+- **accessibility:** the ability to retrieve a potentially useful frame;
+- **control:** appropriate switching and dwell;
+- **integration:** preservation and combination of useful relations across frames.
+
+These components are not assumed to combine multiplicatively, but all are candidate limiting factors. More frames can be useless or harmful when they are redundant, inaccessible, selected indiscriminately, or mutually unintelligible.
+
+## Individual and collective organization
+
+A person can hold multiple frames internally. A team can distribute frames across people. The proposed computational analogy is:
+
+```text
+one system with several selectable frames
+                 versus
+several narrower systems plus communication and integration
+```
+
+The two arrangements are not assumed to be equivalent. Collaboration introduces memory, communication, coordination, trust, and translation processes. People also do not necessarily possess task-relevant different perspectives merely because they are different individuals. The collective claim therefore requires measured frame diversity and matched information, compute, and evaluation controls.
+
+The predicted benefit of frame distance is likely bounded. Nearby frames may be redundant; very distant frames may lack the shared structure required for translation and integration. An intermediate optimum is a prospective hypothesis.
+
 ## Functional architecture
 
 ```text
@@ -84,10 +122,13 @@ The predicted inverted-U concerns a defined switching-control parameter, not an 
 - Default-mode systems may contribute internally generated associations and simulations.
 - Executive-control systems may maintain goals, constrain search, and evaluate candidates.
 - Salience/midcingulo-insular systems may contribute switching or prioritization signals.
-- Hippocampal systems may support relational recombination and episodic construction.
+- Hippocampal-entorhinal systems may support context-indexed relational maps, relational recombination, and episodic construction. Parallel maps for different relations among the same items are a particularly relevant candidate mechanism.
+- Prefrontal and orbitofrontal population states may select task-relevant rules, goals, and mappings through distributed mixed selectivity and context-dependent recurrent dynamics.
 - Frontostriatal competition, adaptation, neuromodulation, and mismatch signals are candidate control mechanisms.
 
 These are mappings to investigate, not one-to-one identifications. Large-scale fMRI networks, local circuit dynamics, and psychological operations live at different explanatory levels.
+
+The neural proposal does not require a fixed subset of neurons to encode “context” in every firing event. A perspective may be a distributed population state in which neurons show mixed selectivity for combinations of content, goal, task state, and memory. Such a state could alter gain, effective connectivity, trajectory, or downstream readout. Hippocampal-prefrontal interaction is therefore a specific candidate prediction, not the definition of perspective and not yet a project result.
 
 ## Boundary conditions and risks
 
