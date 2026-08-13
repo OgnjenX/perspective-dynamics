@@ -38,6 +38,7 @@ This file records consequential scientific and repository decisions. Decisions m
 | D032 | 2026-08-13 | Accepted | Compare progress coupling with adaptation-only and exact-timing random replay controls. | Separates continuous task feedback from an intrinsic timer and separates frame selection from realized switch timing. | A control cannot be matched without leaking task information. |
 | D033 | 2026-08-13 | Accepted | Record EXP007 as an overall failure despite passing calibration and both performance controls. | The frozen variable completed-dwell criterion failed in both environments; censoring cannot be redefined after inspection. | Never for EXP007. |
 | D034 | 2026-08-13 | Accepted | Require a nonabsorbing multi-stage task before claiming emergent variable dwell. | One permanently useful frame encourages escape followed by horizon-censored absorption, preventing repeated productive dwell observations. | A prospectively defined task produces multiple uncensored perspective-relevance changes. |
+| D035 | 2026-08-13 | Accepted | Freeze the revised Level 1 principle as explicit relational schema composition before implementing neural dynamics. | Separating computational sufficiency from biological mechanism makes the composition claim interpretable and falsifiable. | After EXP008 and matched held-out composition tests are reviewed. |
 
 ## Decision template
 

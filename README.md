@@ -38,7 +38,7 @@ Develop and evaluate a biologically grounded computational theory connecting:
 
 ## Project status
 
-Week 1 framing and seven computational experiments are complete. `EXP001`–`EXP006` established and structurally challenged a model-specific evidence-demand/dwell relation. `EXP007` removed periodic decision blocks: calibration and matched controls passed, but the full experiment failed because productive frames became horizon-censored absorbing states rather than demonstrating repeated variable completed dwell. The finding remains synthetic and controller-specific. These experiments are mechanistic groundwork; they do not yet test perspective-repertoire size, collaboration, neural dynamics, or hippocampal involvement.
+Week 1 framing and eight computational experiments are complete. `EXP001`–`EXP006` established and structurally challenged a model-specific evidence-demand/dwell relation. `EXP007` removed periodic decision blocks: calibration and matched controls passed, but the full experiment failed because productive frames became horizon-censored absorbing states rather than demonstrating repeated variable completed dwell. `EXP008` establishes only that explicit cross-perspective schema composition is implementable in one hand-designed synthetic world. It is a Level 1 prototype, not evidence for creativity, generalization, learning, or biology.
 
 Run the fully reproducible baseline with:
 
@@ -56,6 +56,7 @@ make reproduce
 - [Decision record](docs/decisions.md)
 - [Research log](docs/research_log.md)
 - [Findings registry](docs/findings.md)
+- [Research milestones](docs/milestones.md)
 
 ## Research principles
 
