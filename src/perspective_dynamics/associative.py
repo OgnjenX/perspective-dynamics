@@ -145,7 +145,7 @@ class SpreadingActivationModel:
         state = {node: 0.0 for node in nodes}
         trajectory: list[Mapping[str, float]] = [dict(state)]
         for _ in range(self.config.steps):
-            state = self._step(state, cue)
+            state = self.step(state, cue)
             trajectory.append(dict(state))
 
         return SimulationResult(
@@ -155,9 +155,12 @@ class SpreadingActivationModel:
             cue_nodes=tuple(sorted(cue)),
         )
 
-    def _step(
+    def step(
         self, state: Mapping[str, float], cue: Mapping[str, float]
     ) -> dict[str, float]:
+        """Advance one Euler step, allowing controlled frame schedules."""
+        if set(state) != set(self.graph.nodes):
+            raise ValueError("state nodes must exactly match graph nodes")
         propagated = {node: 0.0 for node in self.graph.nodes}
         for source in self.graph.nodes:
             neighbors = self.graph.adjacency[source]

@@ -1,0 +1,8 @@
+condition,n,success_rate,median_first_passage_step,mean_peak_goal_activation,mean_useful_dwell_steps,mean_switch_count
+adaptive_mismatch,100,1.000,19.0,1.06447822,88.800,1.470
+fixed_initial,100,0.000,,0.00010582,0.000,0.000
+fixed_useful,100,1.000,8.0,1.14837739,120.000,0.000
+mixed,100,1.000,12.0,0.41641021,0.000,0.000
+periodic,100,1.000,19.0,0.52000101,37.950,7.000
+random_block,100,1.000,19.0,0.53720761,36.450,7.000
+random_replay,100,0.760,19.0,0.49673638,37.950,1.470
