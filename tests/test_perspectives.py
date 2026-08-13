@@ -2,6 +2,7 @@ import unittest
 
 from perspective_dynamics.associative import DynamicsConfig, SpreadingActivationModel
 from perspective_dynamics.perspectives import (
+    add_uniform_branches,
     blend_graphs,
     build_matched_path_perspectives,
     shortest_path_length,
@@ -55,6 +56,24 @@ class PerspectiveConstructionTests(unittest.TestCase):
             self.family.cue, self.family.goal, threshold=0.01
         )
         self.assertGreater(useful.peak_goal_activation, initial.peak_goal_activation)
+
+    def test_uniform_branches_preserve_matched_frames_and_distances(self) -> None:
+        branched = add_uniform_branches(
+            self.family, branches_per_core_node=1,
+            edge_weight_min=0.8, edge_weight_max=1.2,
+        )
+        frames = list(branched.frames.values())
+        self.assertEqual(len({frame.nodes for frame in frames}), 1)
+        self.assertEqual(len({undirected_edge_count(frame) for frame in frames}), 1)
+        self.assertEqual(
+            len({round(total_undirected_weight(frame), 12) for frame in frames}), 1
+        )
+        expected = {"initial": 6, "useful": 2, "irrelevant": 8}
+        for name, distance in expected.items():
+            self.assertEqual(
+                shortest_path_length(branched.frames[name], "cue", "goal"),
+                distance,
+            )
 
 
 if __name__ == "__main__":

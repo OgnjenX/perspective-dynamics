@@ -8,7 +8,7 @@ relational graph can achieve before perspective-dependent mechanisms are added.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from math import isfinite
+from math import isfinite, sqrt
 from typing import Iterable, Mapping
 
 
@@ -60,6 +60,7 @@ class DynamicsConfig:
     input_gain: float = 1.0
     global_inhibition: float = 0.05
     steps: int = 120
+    propagation_rule: str = "source_normalized"
 
     def __post_init__(self) -> None:
         numeric = (
@@ -75,6 +76,12 @@ class DynamicsConfig:
             raise ValueError("time_step must be positive")
         if self.steps < 1:
             raise ValueError("steps must be at least one")
+        if self.propagation_rule not in {
+            "source_normalized", "symmetric_normalized"
+        }:
+            raise ValueError(
+                "propagation_rule must be source_normalized or symmetric_normalized"
+            )
 
 
 @dataclass(frozen=True)
@@ -162,13 +169,26 @@ class SpreadingActivationModel:
         if set(state) != set(self.graph.nodes):
             raise ValueError("state nodes must exactly match graph nodes")
         propagated = {node: 0.0 for node in self.graph.nodes}
+        strengths = {
+            node: sum(self.graph.adjacency[node].values())
+            for node in self.graph.nodes
+        }
         for source in self.graph.nodes:
             neighbors = self.graph.adjacency[source]
-            total_weight = sum(neighbors.values())
-            if total_weight == 0:
+            source_strength = strengths[source]
+            if source_strength == 0:
                 continue
             for target, weight in neighbors.items():
-                propagated[target] += state[source] * weight / total_weight
+                if self.config.propagation_rule == "source_normalized":
+                    scale = weight / source_strength
+                else:
+                    target_strength = strengths[target]
+                    if target_strength == 0:
+                        raise ValueError(
+                            "symmetric normalization requires positive target strength"
+                        )
+                    scale = weight / sqrt(source_strength * target_strength)
+                propagated[target] += state[source] * scale
 
         mean_activity = sum(state.values()) / len(state)
         updated: dict[str, float] = {}

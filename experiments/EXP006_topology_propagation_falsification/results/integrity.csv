@@ -1,0 +1,5 @@
+topology,propagation_rule,seeds_checked,node_sets_match,edge_counts_match,total_weights_match,distances_match
+path,source_normalized,150,1,1,1,1
+path,symmetric_normalized,150,1,1,1,1
+branched_path,source_normalized,150,1,1,1,1
+branched_path,symmetric_normalized,150,1,1,1,1

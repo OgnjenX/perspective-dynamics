@@ -38,7 +38,7 @@ Develop and evaluate a biologically grounded computational theory connecting:
 
 ## Project status
 
-Week 1 framing and five computational experiments are complete. `EXP001` validated the fixed baseline; `EXP002` isolated relational geometry; `EXP003` showed evaluation-gated switching beats schedule-matched replay; `EXP004` confirmed an intermediate dwell regime; and `EXP005` confirmed on held-out seeds that stricter evidence thresholds shift productive perspective dwell later. This first registered finding remains model-specific and requires aggressive falsification before biological interpretation. These experiments are mechanistic groundwork; they do not yet test perspective-repertoire size, collaboration, or hippocampal involvement.
+Week 1 framing and six computational experiments are complete. `EXP001` validated the fixed baseline; `EXP002` isolated relational geometry; `EXP003` showed evaluation-gated switching beats schedule-matched replay; `EXP004` confirmed an intermediate dwell regime; `EXP005` confirmed on held-out seeds that stricter evidence thresholds shift productive perspective dwell later; and `EXP006` found that this relation survives a branched topology and symmetric-normalized propagation under frozen criteria. The finding remains synthetic and controller-specific. These experiments are mechanistic groundwork; they do not yet test perspective-repertoire size, collaboration, self-timed neural dynamics, or hippocampal involvement.
 
 Run the fully reproducible baseline with:
 

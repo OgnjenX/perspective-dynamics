@@ -1,0 +1,6 @@
+scope,topology,propagation_rule,positive_control,spearman_rho,adjacent_reversals,distinct_optima,interior_optima,environment_pass
+environment,branched_path,source_normalized,0,0.98198051,0,5,7,1
+environment,branched_path,symmetric_normalized,0,0.99103121,0,6,7,1
+environment,path,source_normalized,1,0.99103121,0,6,7,1
+environment,path,symmetric_normalized,0,0.98198051,0,5,7,1
+overall_novel,all,all,0,,,,,1
