@@ -48,15 +48,7 @@ These categories are intentionally marked open; Week 1 does not claim a complete
 
 Current work supports dynamic network interaction, cognitive restructuring, and geometry-sensitive population analysis, but does not yet establish the full causal chain proposed here:
 
-\[
-\text{perspective control}
-\rightarrow
-\text{representational transformation}
-\rightarrow
-\text{changed state accessibility}
-\rightarrow
-\text{novel and useful solution}.
-\]
+> **Perspective control → representational transformation → changed state accessibility → novel and useful solution.**
 
 The project’s contribution would be to formalize and test this chain against search, noise, information, task-switching, and readout-only explanations.
 
