@@ -1,0 +1,90 @@
+{
+  "claim_boundary": "Bridge is a learned predictive conjunction in a synthetic candidate-selection task, not creativity or biology.",
+  "criteria": {
+    "h14_1_predictive_transfer": true,
+    "h14_2_over_controls": false,
+    "h14_3_bridge_explanation": true,
+    "h14_4_component_removal": true,
+    "h14_5_identity_invariance": true,
+    "handwritten_oracle_success_rate": 1.0,
+    "learned_positive_explanation": [
+      "elevated",
+      "stable",
+      "structure"
+    ],
+    "ordinary_memory_planner_success_rate": 0.0,
+    "overall_pass": false,
+    "predictive_category_count": 3,
+    "predictive_reset_count": 2,
+    "predictive_success_rate": 1.0,
+    "random_mean_success_rate": 0.016000000000000004,
+    "removal_success_rates": {
+      "elevated": 0.0,
+      "stable": 0.0
+    },
+    "som_success_rate": 1.0
+  },
+  "experiment": "EXP014",
+  "predictive_events": [
+    {
+      "environment": "construction",
+      "predictions": [
+        "reach_failure",
+        "reach_failure",
+        "reach_success",
+        "reach_failure"
+      ],
+      "selected": 2,
+      "selected_identity": "construction_candidate_2",
+      "success": true
+    },
+    {
+      "environment": "garden",
+      "predictions": [
+        "reach_failure",
+        "reach_failure",
+        "reach_success",
+        "reach_failure"
+      ],
+      "selected": 2,
+      "selected_identity": "garden_candidate_2",
+      "success": true
+    },
+    {
+      "environment": "warehouse",
+      "predictions": [
+        "reach_failure",
+        "reach_failure",
+        "reach_success",
+        "reach_failure"
+      ],
+      "selected": 2,
+      "selected_identity": "warehouse_candidate_2",
+      "success": true
+    },
+    {
+      "environment": "playground",
+      "predictions": [
+        "reach_failure",
+        "reach_failure",
+        "reach_success",
+        "reach_failure"
+      ],
+      "selected": 2,
+      "selected_identity": "playground_candidate_2",
+      "success": true
+    },
+    {
+      "environment": "dock",
+      "predictions": [
+        "reach_failure",
+        "reach_failure",
+        "reach_success",
+        "reach_failure"
+      ],
+      "selected": 2,
+      "selected_identity": "dock_candidate_2",
+      "success": true
+    }
+  ]
+}

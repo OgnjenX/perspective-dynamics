@@ -68,3 +68,27 @@ plausibility.
 corpus without supplying the bridge operator. Any proposed integration
 mechanism must show held-out transfer, efficiency, or representational
 construction unavailable to a matched planner over the same stored evidence.
+
+## F003 — Engineered episode features support learned categories and bridge conjunctions
+
+**Status:** prospectively supported representation-learning result; predictive
+uniqueness failed; not evidence for creativity or biology.
+
+**Experiments:** EXP011–EXP014.
+
+**Finding:** Unsupervised competitive/SOM learning recovered reusable episode
+families across unseen identities. Predictive vigilance learning refined
+categories after mismatches and different supplied targets induced different
+organizations. In EXP014, a predictive category inferred the conjunction
+`elevated + stable + structure` without receiving a bridge feature; both
+component removals eliminated success.
+
+**Critical qualification:** Similarity-only SOM also solved every EXP014 task.
+The bridge was separable in supplied feature geometry, so prediction was not
+necessary. EXP012 also used nine predictive categories versus three in its
+frozen SOM; a post-hoc nine-category SOM reached 0.777778 versus 1.0 predictive
+accuracy. Capacity-matched confirmation remains absent.
+
+**Next falsification gate:** prospectively match category capacity and construct
+episodes where similarity is uninformative but outcome contingencies support a
+transferable abstraction. Biological interpretation remains closed.

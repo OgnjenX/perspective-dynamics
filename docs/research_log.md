@@ -421,3 +421,34 @@ rerun; the vectorizer excludes identity, so this is expected not to alter the
 outcome. Also add a post-hoc SOM diagnostic with nine categories, matching the
 predictive learner's realized capacity. This diagnostic does not alter frozen
 H12 criteria and must not be described as confirmatory.
+
+## 2026-08-14 — EXP011–EXP014 completed
+
+### Validation
+
+Forty-five tests passed. All four frozen experiments executed deterministically.
+EXP011 and EXP012 preserve 200 random-control runs each; EXP014 preserves 200
+random candidate-selection controls.
+
+### Results
+
+EXP011 passed: competitive learning and SOM each achieved 1.0 purity and
+held-out accuracy. EXP012 passed its frozen criteria with predictive accuracy
+1.0 versus SOM 0.333333 and random 0.33, with nine resets and nine predictive
+categories. The post-hoc nine-category SOM reached 0.777778. EXP013 passed:
+all modules and the cross-map reached 1.0, with nonidentical co-clustering
+organizations.
+
+EXP014 failed overall. Predictive learning transferred perfectly, recovered
+the `elevated`, `stable`, `structure` intersection, and failed under either
+component removal. Exact-memory planning scored 0.0 and random clustering
+0.016, but SOM also scored 1.0, failing H14.2.
+
+### Interpretation
+
+The phase demonstrates category and conjunction discovery from engineered
+episode features. It does not show that prediction is necessary for bridge
+discovery, because the bridge was already separable in similarity geometry.
+The next design must make positive and negative configurations similarity-
+matched while preserving a predictive regularity, and must prospectively match
+model capacity. No biological interpretation track is opened.
