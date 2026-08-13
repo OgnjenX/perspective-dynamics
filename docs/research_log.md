@@ -265,3 +265,17 @@ F001 is not specific to the original unbranched path or source-normalized propag
 ### Boundary and next step
 
 The controller still evaluates goal activation on an external block clock. EXP007 should remove that clock and test whether local mismatch/adaptation variables generate an evidence-dependent stability–flexibility relation. No collaboration, repertoire-size, or biological claim follows from EXP006.
+
+## 2026-08-13 — EXP007 prospective self-timed design
+
+### Artifact target
+
+EXP004–EXP006 selected among externally imposed decision-block durations. EXP007 removes periodic boundaries and updates a mismatch/adaptation accumulator every integration step. Positive goal-evidence change can delay the next switch, making realized dwell trajectory-dependent.
+
+### Frozen tests
+
+Test clock-free evidence-demand calibration in the original path/source environment and the harder branched/symmetric environment. Compare against adaptation-only timing and exact-timing random replay. Require nondegenerate, variable realized dwell in addition to performance criteria.
+
+### Boundary
+
+This experiment still uses supervised goal activation and an intrinsic patience parameter. Passing removes one artifact explanation but does not establish biological timing, learned perspectives, creativity, or collaboration. Implementation and results begin only after this design is committed.

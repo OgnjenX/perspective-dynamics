@@ -34,6 +34,8 @@ This file records consequential scientific and repository decisions. Decisions m
 | D028 | 2026-08-13 | Accepted | Require all three novel EXP006 environments to pass relaxed but nondegenerate trend criteria. | A conjunction makes the robustness claim difficult to obtain and treats boundary or constant optima as failures rather than favorable trends. | Never for EXP006; later diagnostic studies may use new prospective criteria. |
 | D029 | 2026-08-13 | Accepted | Upgrade F001 from single-structure confirmation to tested topology/propagation robustness, while retaining controller-specific status. | EXP006 passed the positive control and the frozen conjunction across all three novel environments without boundary or constant optima. | A self-timed or broader structural test fails. |
 | D030 | 2026-08-13 | Accepted | Test a self-timed mismatch/adaptation controller before biological neuron models. | The external decision clock is now the strongest obvious artifact explanation for F001. | A clock-free controller is specified and tested prospectively. |
+| D031 | 2026-08-13 | Accepted | Define EXP007 switching through a per-step mismatch accumulator whose growth is opposed by normalized positive progress. | Produces trajectory-dependent segment boundaries without periodic evaluation blocks while keeping the mechanism transparent. | EXP007 integrity checks show fixed rather than variable realized dwell. |
+| D032 | 2026-08-13 | Accepted | Compare progress coupling with adaptation-only and exact-timing random replay controls. | Separates continuous task feedback from an intrinsic timer and separates frame selection from realized switch timing. | A control cannot be matched without leaking task information. |
 
 ## Decision template
 

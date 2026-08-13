@@ -8,3 +8,4 @@ Versioned experiment folders contain their question, prospective predictions, me
 - `EXP004_dwell_regime`: preregistered timescale sweep testing whether intermediate dwell outperforms rapid switching and excessive persistence.
 - `EXP005_evidence_timescale`: held-out confirmation test for the exploratory relation between evidence threshold and optimal perspective dwell.
 - `EXP006_topology_propagation_falsification`: prospective attempt to falsify F001 across path versus branched topology and source- versus symmetric-normalized propagation.
+- `EXP007_self_timed_controller`: prospective test of continuously updated mismatch/adaptation switching without periodic decision blocks.
