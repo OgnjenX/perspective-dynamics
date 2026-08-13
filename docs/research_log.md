@@ -412,3 +412,12 @@ All experiments compare random categories, similarity-only SOM, predictive
 categories, ordinary memory/planning, and hand-written references where
 applicable. Failure to outperform matched nonpredictive and ordinary baselines
 will keep the biological phase closed.
+
+### Post-execution audit amendment
+
+The initial EXP012 runner asserted identity invariance rather than recomputing
+predictions after identity replacement. Correct this audit implementation and
+rerun; the vectorizer excludes identity, so this is expected not to alter the
+outcome. Also add a post-hoc SOM diagnostic with nine categories, matching the
+predictive learner's realized capacity. This diagnostic does not alter frozen
+H12 criteria and must not be described as confirmatory.

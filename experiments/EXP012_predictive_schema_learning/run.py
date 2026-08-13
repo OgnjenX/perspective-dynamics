@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+from dataclasses import replace
 from pathlib import Path
 
 from perspective_dynamics.schema_learning import (
@@ -34,6 +35,20 @@ def main() -> None:
     predictive = PredictiveVigilanceLearner(p["vigilance"]).fit(train_vectors, train_labels)
     predictive_predictions = [predictive.predict(vector) for vector in test_vectors]
     predictive_accuracy = accuracy(test_labels, predictive_predictions)
+    scrambled_test = [replace(item, identity=f"scrambled_{index}")
+                      for index, item in enumerate(test)]
+    scrambled_predictions = [
+        predictive.predict(space.transform(item)) for item in scrambled_test
+    ]
+    matched_som = SelfOrganizingMap1D(
+        len(predictive.categories), p["som_epochs"], p["learning_rate"], p["som_seed"]
+    ).fit(train_vectors)
+    matched_assignments = [matched_som.category(vector) for vector in train_vectors]
+    matched_mapping = category_labels(matched_assignments, train_labels)
+    matched_predictions = predict_from_categories(
+        matched_som, test_vectors, matched_mapping, majority_label(train_labels)
+    )
+    matched_som_accuracy = accuracy(test_labels, matched_predictions)
     random_scores = [random_category_accuracy(
         train_labels, test_labels, p["som_category_count"], seed
     ) for seed in range(p["random_seed_start"], p["random_seed_stop"] + 1)]
@@ -43,18 +58,21 @@ def main() -> None:
         "h12_2_over_baselines": predictive_accuracy - som_accuracy >= p["minimum_predictive_minus_som"]
             and predictive_accuracy - random_mean >= p["minimum_predictive_minus_random"],
         "h12_3_refinement": predictive.reset_count > 0,
-        "h12_4_identity_invariance": True,
+        "h12_4_identity_invariance": predictive_predictions == scrambled_predictions,
         "predictive_accuracy": predictive_accuracy,
         "som_accuracy": som_accuracy,
         "random_mean_accuracy": random_mean,
         "predictive_category_count": len(predictive.categories),
         "som_category_count": len(som.prototypes),
+        "exploratory_matched_capacity_som_accuracy": matched_som_accuracy,
+        "exploratory_matched_capacity_som_category_count": len(matched_som.prototypes),
         "reset_count": predictive.reset_count,
     }
     criteria["overall_pass"] = all(criteria[key] for key in criteria if key.startswith("h12_"))
     summary = {"experiment": "EXP012", "criteria": criteria,
                "predictive_predictions": predictive_predictions,
                "som_predictions": som_predictions,
+               "exploratory_matched_capacity_som_predictions": matched_predictions,
                "claim_boundary": "ARTMAP-style algorithmic motif; not canonical or biological ART."}
     RESULTS.mkdir(exist_ok=True)
     (RESULTS / "random_scores.json").write_text(json.dumps(random_scores) + "\n")
