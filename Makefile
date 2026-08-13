@@ -1,4 +1,4 @@
-.PHONY: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004 exp005 analyze-exp005 exp006 analyze-exp006 exp007 analyze-exp007 exp008 reproduce
+.PHONY: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004 exp005 analyze-exp005 exp006 analyze-exp006 exp007 analyze-exp007 exp008 exp009 exp010 reproduce
 
 test:
 	PYTHONPATH=src python3 -m unittest discover -s tests -v
@@ -48,4 +48,10 @@ analyze-exp007:
 exp008:
 	PYTHONPATH=src python3 experiments/EXP008_schema_composition/run.py
 
-reproduce: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004 exp005 analyze-exp005 exp006 analyze-exp006 exp007 analyze-exp007 exp008
+exp009:
+	PYTHONPATH=src python3 experiments/EXP009_generalized_schema_composition/run.py
+
+exp010:
+	PYTHONPATH=src python3 experiments/EXP010_emergent_trajectory/run.py
+
+reproduce: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004 exp005 analyze-exp005 exp006 analyze-exp006 exp007 analyze-exp007 exp008 exp009 exp010

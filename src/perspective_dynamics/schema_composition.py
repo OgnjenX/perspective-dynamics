@@ -79,6 +79,7 @@ class CompositionResult:
     steps: tuple[PlanStep, ...]
     explored_states: int
     reason: str
+    schema_checks: int = 0
 
 
 class SchemaCompositionEngine:
@@ -104,6 +105,7 @@ class SchemaCompositionEngine:
         *,
         perspectives: tuple[str, ...] | None = None,
         mode: str = "compose",
+        max_schema_checks: int | None = None,
     ) -> CompositionResult:
         if mode not in {"compose", "single", "pool"}:
             raise ValueError("mode must be compose, single, or pool")
@@ -116,16 +118,25 @@ class SchemaCompositionEngine:
             raise ValueError("single mode requires one perspective")
         if goal in world.facts:
             return CompositionResult(True, goal, world.facts, (), 0, "goal already present")
+        if max_schema_checks is not None and max_schema_checks < 1:
+            raise ValueError("max_schema_checks must be positive")
 
         # States are (facts, provenance).  The search is finite because each
         # schema application only adds facts and duplicate states are pruned.
         frontier: list[tuple[frozenset[Fact], tuple[PlanStep, ...]]] = [(world.facts, ())]
         seen = {world.facts}
         explored = 0
+        schema_checks = 0
         while frontier:
             facts, steps = frontier.pop(0)
             explored += 1
             for schema in schemas:
+                schema_checks += 1
+                if max_schema_checks is not None and schema_checks > max_schema_checks:
+                    return CompositionResult(
+                        False, goal, facts, steps, explored,
+                        "schema-check budget exhausted", max_schema_checks,
+                    )
                 for bindings, enabled in self._bindings(schema, facts):
                     produced = tuple(_ground(effect, bindings) for effect in schema.effects)
                     new_facts = facts | set(produced)
@@ -139,13 +150,19 @@ class SchemaCompositionEngine:
                     )
                     new_steps = steps + (step,)
                     if goal in new_facts:
-                        return CompositionResult(True, goal, new_facts, new_steps, explored, "goal reached")
+                        return CompositionResult(
+                            True, goal, new_facts, new_steps, explored,
+                            "goal reached", schema_checks,
+                        )
                     # The baselines expose stored facts but do not compose
                     # effects into later prerequisites.
                     if mode == "pool":
                         continue
                     frontier.append((new_facts, new_steps))
-        return CompositionResult(False, goal, world.facts, (), explored, "no compositional plan")
+        return CompositionResult(
+            False, goal, world.facts, (), explored,
+            "no compositional plan", schema_checks,
+        )
 
     @staticmethod
     def _bindings(schema: RelationalSchema, facts: frozenset[Fact]) -> list[tuple[dict[str, str], list[Fact]]]:

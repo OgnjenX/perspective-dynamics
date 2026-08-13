@@ -16,6 +16,7 @@ class SchemaCompositionTests(unittest.TestCase):
         self.assertEqual([step.perspective for step in result.steps], ["support", "stability", "goal"])
         self.assertEqual(result.steps[0].enabled_by[:2], (("box", "box_a"), ("box", "box_b")))
         self.assertEqual(result.steps[-1].enabled_by[0], ("stable", "platform"))
+        self.assertGreater(result.schema_checks, 0)
 
     def test_single_perspective_fails_when_trajectory_is_split(self) -> None:
         world, schemas, goal = demo_world()
@@ -41,6 +42,15 @@ class SchemaCompositionTests(unittest.TestCase):
     def test_world_is_immutable_and_normalized(self) -> None:
         world = RelationalWorld.from_facts([["a", "b"], ["a", "b"]])
         self.assertEqual(world.facts, frozenset({("a", "b")}))
+
+    def test_schema_check_budget_is_enforced(self) -> None:
+        world, schemas, goal = demo_world()
+        result = SchemaCompositionEngine(schemas).solve(
+            world, goal, max_schema_checks=1
+        )
+        self.assertFalse(result.success)
+        self.assertEqual(result.reason, "schema-check budget exhausted")
+        self.assertEqual(result.schema_checks, 1)
 
 
 if __name__ == "__main__":
