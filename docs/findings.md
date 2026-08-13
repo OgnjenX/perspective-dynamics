@@ -12,15 +12,19 @@ This registry records results that passed a prospective or held-out criterion. I
 
 **Structural falsification:** EXP006, prospectively frozen conjunction across unseen seeds 2,000–2,149.
 
+**Self-timed challenge:** EXP007, prospectively frozen conjunction across unseen seeds 3,000–3,149; overall failed because the variable completed-dwell criterion failed, although calibration and both performance controls passed.
+
 **Finding:** As the evaluation evidence threshold increased, the block length maximizing mean peak goal activation increased monotonically from 2 to 10 steps across the held-out grid.
 
 **Confirmatory evidence:** selected optima `2, 3, 3, 4, 5, 7, 10`; Spearman ρ = 0.99103121 against ordered thresholds; zero adjacent reversals. Required criteria were ρ ≥ 0.8 and at most one reversal.
 
 **EXP006 evidence:** the positive control and all three novel environments passed. Environment-level Spearman correlations ranged from 0.98198051 to 0.99103121, with zero adjacent reversals, five or six distinct optima, and all seven optima inside the frozen grid boundaries. This rules out specificity to an unbranched path or source-only normalization within the tested family.
 
+**EXP007 qualification:** without periodic decision blocks, selected intrinsic patience still increased with evidence demand (ρ = 0.95431352 and 0.99103121), and progress coupling beat both optimized adaptation-only control and exact-timing random replay at every threshold. However, selected runs commonly escaped the initial frame and remained in the useful frame until censoring. The preregistered repeated-variable-dwell criterion failed in both environments, so EXP007 does not confirm emergent metastable timing.
+
 **Mechanistic interpretation:** A frame must remain active long enough for task-valid evidence to accumulate. Low thresholds permit rapid evaluation and short dwell; high thresholds require longer integration. Excessive dwell remains harmful when the active frame is unproductive, yielding a threshold-dependent stability–flexibility balance.
 
-**What this does not establish:** that human creativity uses this rule; that the timing is emergent or neural; that goal activation is a realistic evaluation signal; that the relation survives a self-timed controller, learned frames, nonlinear dynamics, or graph families without a path backbone.
+**What this does not establish:** that human creativity uses this rule; that timing is recurrently metastable, emergent, or neural; that goal activation is a realistic evaluation signal; or that the relation survives learned frames, nonlinear dynamics, graph families without a path backbone, or nonabsorbing tasks.
 
 **Closest literature themes:** cognitive stability versus flexibility, learned switch readiness, creative persistence versus shifting, metastable-state duration control, and dynamic cycles in creative cognition. The targeted Week 1/EXP005 search found no direct test of evidence threshold calibrating perspective-frame dwell, but only a systematic review can support a novelty claim.
 
@@ -29,7 +33,7 @@ This registry records results that passed a prospective or held-out criterion. I
 1. graph families without a path backbone and varied solution geometries;
 2. nonlinear propagation and activation rules;
 3. noise and variable run budgets;
-4. self-timed adaptation/mismatch dynamics without imposed blocks;
+4. self-timed adaptation/mismatch dynamics in a nonabsorbing multi-stage task;
 5. usefulness signals that do not directly read goal-node activation;
 6. learned rather than hand-constructed perspectives.
 

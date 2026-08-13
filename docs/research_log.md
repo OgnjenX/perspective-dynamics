@@ -279,3 +279,21 @@ Test clock-free evidence-demand calibration in the original path/source environm
 ### Boundary
 
 This experiment still uses supervised goal activation and an intrinsic patience parameter. Passing removes one artifact explanation but does not establish biological timing, learned perspectives, creativity, or collaboration. Implementation and results begin only after this design is committed.
+
+## 2026-08-13 — EXP007 completed with partial falsification
+
+### Validation
+
+Twenty-four tests passed. The experiment generated 75,600 runs and exact-timing replay matched all 25,200 source schedules.
+
+### Passed criteria
+
+Clock-free calibration passed in both environments (ρ = 0.95431352 and 0.99103121; zero reversals). Optimized progress coupling beat optimized adaptation-only timing at every threshold, and task-coupled frame identity beat exact-timing random replay at every threshold.
+
+### Failed criterion
+
+H7.4 failed in both environments. Selected controllers generally made roughly one to two switches, entered a useful frame, and retained it until the horizon. Because the final segment was right-censored and prospectively excluded, the required repeated variability among completed segments was absent. The overall conjunction therefore failed.
+
+### Interpretation and next gate
+
+Periodic decision blocks are not necessary for the calibration or performance-control results, but EXP007 does not establish recurrent metastable dwell. The next design must be nonabsorbing: a multi-stage task should change which perspective is useful so repeated uncensored adaptation episodes can be measured. The progress signal should simultaneously be made less solution-proximal than direct goal activation.
