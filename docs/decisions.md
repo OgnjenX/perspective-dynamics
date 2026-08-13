@@ -25,6 +25,7 @@ This file records consequential scientific and repository decisions. Decisions m
 | D019 | 2026-08-13 | Accepted | Test the dwell-time tradeoff in EXP004 before calling the dynamics metastable. | The switching interval is externally controlled; an intermediate optimum is necessary but not sufficient evidence for emergent metastability. | A self-organized controller reproduces the regime. |
 | D020 | 2026-08-13 | Accepted | Freeze contrasts on blocks 10/15/20 versus blocks 1 and 60 across three evaluation thresholds. | Prevents selecting a favorable interval or threshold after observing the sweep. | Integrity failure or numerical instability invalidates the grid. |
 | D021 | 2026-08-13 | Accepted | Treat the apparent 3→5→10 optimum shift as exploratory and replicate it on held-out seeds. | The scaling pattern was noticed after inspecting EXP004 cell maxima. | A prospectively specified held-out experiment passes or falsifies it. |
+| D022 | 2026-08-13 | Accepted | Confirm evidence–timescale scaling using seeds 1,000–1,199, a denser grid, Spearman ρ ≥ 0.8, and at most one adjacent reversal. | Separates confirmation from EXP004 discovery and prevents qualitative curve interpretation after inspection. | EXP005 reports both criteria without changing them. |
 
 ## Decision template
 

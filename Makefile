@@ -1,4 +1,4 @@
-.PHONY: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004 reproduce
+.PHONY: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004 exp005 analyze-exp005 reproduce
 
 test:
 	PYTHONPATH=src python3 -m unittest discover -s tests -v
@@ -27,4 +27,10 @@ exp004:
 analyze-exp004:
 	PYTHONPATH=src python3 experiments/EXP004_dwell_regime/analysis.py
 
-reproduce: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004
+exp005:
+	PYTHONPATH=src python3 experiments/EXP005_evidence_timescale/run.py
+
+analyze-exp005:
+	PYTHONPATH=src python3 experiments/EXP005_evidence_timescale/analysis.py
+
+reproduce: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004 exp005 analyze-exp005

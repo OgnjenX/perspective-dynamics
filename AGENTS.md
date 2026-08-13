@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This repository combines research documentation with small, controlled computational experiments. `docs/` contains the scientific question, working theory, falsifiable hypotheses, roadmap, literature map, decision record, and chronological log. `src/perspective_dynamics/` contains reusable model and task code. Every versioned experiment under `experiments/` owns its prospective hypothesis, method, parameters, entry points, generated outputs, and conclusion. `papers/` holds the bibliography and source notes.
+This repository combines research documentation with small, controlled computational experiments. `docs/` contains the scientific question, working theory, falsifiable hypotheses, roadmap, literature map, decision record, chronological log, and findings registry. `src/perspective_dynamics/` contains reusable model and task code. Every versioned experiment under `experiments/` owns its prospective hypothesis, method, parameters, entry points, generated outputs, and conclusion. `papers/` holds the bibliography and source notes.
 
 Keep claims at the correct evidence level. Distinguish cited findings, project interpretations, modeling assumptions, and speculation. A conceptual equation is not a result.
 
@@ -23,6 +23,8 @@ Record each consequential change in `docs/decisions.md`; append rather than sile
 - `make analyze-exp003`: aggregate EXP003 and verify matched schedules.
 - `make exp004`: generate the EXP004 dwell-regime sweep.
 - `make analyze-exp004`: evaluate the frozen intermediate-versus-extreme contrasts.
+- `make exp005`: generate the held-out evidence-timescale replication.
+- `make analyze-exp005`: apply the frozen rank-trend confirmation criteria.
 - `make reproduce`: run tests, generation, and analysis in sequence.
 
 Python 3.11 or later is required; the baseline has no third-party runtime dependency. Use four-space indentation, type hints, immutable dataclasses for configurations/results, and deterministic node ordering.

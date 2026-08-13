@@ -52,6 +52,12 @@ Current work supports dynamic network interaction, cognitive restructuring, and 
 
 The project’s contribution would be to formalize and test this chain against search, noise, information, task-switching, and readout-only explanations.
 
+## 7. Stability, flexibility, and dwell-time control
+
+The stability–flexibility dilemma is established beyond creativity: cognitive control must protect a task from distraction while retaining readiness to switch, and these functions may be regulated by learning from recent demand and recognized context [10]. In creativity experiments, autonomous choices about when to shift or dwell can support originality more effectively than instructed regular shifting [11]. Recent neural-network work also proposes that controlling metastable-state stability can flexibly modulate cognitive processing speed as task difficulty, attention, or expectation changes [12]. Creative storytelling has been associated with dynamic cycles between spontaneous and deliberate brain states [13].
+
+These findings make dwell regulation scientifically plausible, but they do not directly establish the model-specific result in F001: that increasing the evidence required to validate progress shifts the optimal dwell of a relational perspective. That distinction is an inference from this targeted orientation search, not a systematic-review conclusion.
+
 ## References
 
 [1] R. Beaty, M. Benedek, S. B. Kaufman, and P. Silvia (2015), “Default and Executive Network Coupling Supports Creative Idea Production,” *Scientific Reports* 5. 600 citations. [Consensus record](https://consensus.app/papers/default-and-executive-network-coupling-supports-creative-beaty-benedek/b780896b140750e8acc32c9f2b4bc663/?utm_source=chatgpt)
@@ -72,6 +78,14 @@ The project’s contribution would be to formalize and test this chain against s
 
 [9] N. Kriegeskorte and X.-X. Wei (2021), “Neural tuning and representational geometry,” *Nature Reviews Neuroscience* 22, 703–718. 212 citations. [Consensus record](https://consensus.app/papers/neural-tuning-and-representational-geometry-kriegeskorte-wei/1ce84e84f22050e8aea44fdfa471ec9b/?utm_source=chatgpt)
 
+[10] T. Egner (2023), “Principles of cognitive control over task focus and task switching,” *Nature Reviews Psychology* 2, 702–714. 99 citations. [Consensus record](https://consensus.app/papers/principles-of-cognitive-control-over-task-focus-and-task-egner/8b8ff4a0f18957ec879e0e0993153260/?utm_source=chatgpt)
+
+[11] Y. Wu and W. Koutstaal (2022), “Creative flexibility and creative persistence: Evaluating the effects of instructed vs autonomous choices to shift vs. dwell on divergent and convergent thinking,” *Consciousness and Cognition* 105, 103417. 13 citations. [Consensus record](https://consensus.app/papers/creative-flexibility-and-creative-persistence-wu-koutstaal/5bee5d601c6e5721b44c922f42b15e53/?utm_source=chatgpt)
+
+[12] T. Kurikawa and K. Kaneko (2025), “Stability control of metastable states as a unified mechanism for flexible temporal modulation in cognitive processing,” *Neural Networks* 196, 108381. 1 citation. [Consensus record](https://consensus.app/papers/stability-control-of-metastable-states-as-a-unified-kurikawa-kaneko/7bae6bf55cae5b3b815a028ec6758316/?utm_source=chatgpt)
+
+[13] X. Liang, M. Cai, G. Jing, C. Zhang, E. S. Nichols, and L. Liu (2025), “Dynamic cycles between brain states during creative storytelling,” *NeuroImage*, 121053. 3 citations. [Consensus record](https://consensus.app/papers/dynamic-cycles-between-brain-states-during-creative-liang-cai/c2354cc3ec88506693edd2c5a7b00075/?utm_source=chatgpt)
+
 ## Search record
 
-Consensus keyword searches on 2026-08-13 covered: creativity with dynamic DMN/ECN/salience connectivity; insight and representational change; neural population dynamics, geometry, cognitive flexibility, and perspective taking. Full paper records were fetched before inclusion. A later systematic review should record databases, exact queries, dates, inclusion criteria, screening decisions, and risk-of-bias assessment.
+Consensus keyword searches on 2026-08-13 covered: creativity with dynamic DMN/ECN/salience connectivity; insight and representational change; neural population dynamics, geometry, cognitive flexibility, perspective taking; stability/flexibility; shift-versus-dwell creativity; metastable duration; and evidence-threshold timing. Full paper records were fetched before inclusion. A later systematic review should record databases, exact queries, dates, inclusion criteria, screening decisions, and risk-of-bias assessment.
