@@ -37,6 +37,17 @@ from .compositional_emergence import (
     sham_integration_schemas,
     training_experiences,
 )
+from .schema_learning import (
+    CompetitiveLearner,
+    Episode,
+    FeatureSpace,
+    PredictiveVigilanceLearner,
+    SelfOrganizingMap1D,
+    bridge_episodes,
+    multi_target_episodes,
+    predictive_conflict_episodes,
+    schema_discovery_episodes,
+)
 
 __all__ = [
     "AssociativeGraph",
@@ -72,4 +83,13 @@ __all__ = [
     "scramble_task",
     "sham_integration_schemas",
     "training_experiences",
+    "CompetitiveLearner",
+    "Episode",
+    "FeatureSpace",
+    "PredictiveVigilanceLearner",
+    "SelfOrganizingMap1D",
+    "bridge_episodes",
+    "multi_target_episodes",
+    "predictive_conflict_episodes",
+    "schema_discovery_episodes",
 ]

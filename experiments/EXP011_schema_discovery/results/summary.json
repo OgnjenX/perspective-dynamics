@@ -1,0 +1,171 @@
+{
+  "claim_boundary": "Identity excluded by vectorizer; schemas are similarity categories, not learned rules.",
+  "criteria": {
+    "h11_1_purity": true,
+    "h11_2_transfer": true,
+    "h11_3_identity_invariance": true,
+    "h11_4_som_over_random": true,
+    "handwritten_reference_accuracy": 1.0,
+    "overall_pass": true,
+    "random_mean_accuracy": 0.3291666666666668
+  },
+  "experiment": "EXP011",
+  "feature_names": [
+    "action:climb",
+    "action:fill",
+    "action:push",
+    "elevated",
+    "holds_contents",
+    "hollow",
+    "low_friction",
+    "open_top",
+    "rigid",
+    "rotates",
+    "round",
+    "supports_weight"
+  ],
+  "methods": [
+    {
+      "method": "competitive",
+      "prototypes": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "purity": 1.0,
+      "test_predictions": [
+        "height_increase",
+        "height_increase",
+        "translation",
+        "translation",
+        "stored",
+        "stored"
+      ],
+      "train_assignments": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      "transfer_accuracy": 1.0
+    },
+    {
+      "method": "som",
+      "prototypes": [
+        [
+          0.9996694385131085,
+          2.157949263894499e-09,
+          0.0003305593289422564,
+          0.9996694385131085,
+          2.157949263894499e-09,
+          2.157949263894499e-09,
+          0.0003305593289422564,
+          2.157949263894499e-09,
+          0.9996694385131085,
+          0.0003305593289422564,
+          0.0003305593289422564,
+          0.9996694385131085
+        ],
+        [
+          0.0003516476570339423,
+          0.0003467888745659926,
+          0.9993015634684002,
+          0.0003516476570339423,
+          0.0003467888745659926,
+          0.0003467888745659926,
+          0.9993015634684002,
+          0.0003467888745659926,
+          0.0003516476570339423,
+          0.9993015634684002,
+          0.9993015634684002,
+          0.0003516476570339423
+        ],
+        [
+          2.4670796517214237e-09,
+          0.9996636146310774,
+          0.00033638290184298075,
+          2.4670796517214237e-09,
+          0.9996636146310774,
+          0.9996636146310774,
+          0.00033638290184298075,
+          0.9996636146310774,
+          2.4670796517214237e-09,
+          0.00033638290184298075,
+          0.00033638290184298075,
+          2.4670796517214237e-09
+        ]
+      ],
+      "purity": 1.0,
+      "test_predictions": [
+        "height_increase",
+        "height_increase",
+        "translation",
+        "translation",
+        "stored",
+        "stored"
+      ],
+      "train_assignments": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "transfer_accuracy": 1.0
+    }
+  ]
+}

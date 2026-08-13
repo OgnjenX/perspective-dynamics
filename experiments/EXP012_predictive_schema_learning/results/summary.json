@@ -1,0 +1,52 @@
+{
+  "claim_boundary": "ARTMAP-style algorithmic motif; not canonical or biological ART.",
+  "criteria": {
+    "exploratory_matched_capacity_som_accuracy": 0.7777777777777778,
+    "exploratory_matched_capacity_som_category_count": 9,
+    "h12_1_predictive_accuracy": true,
+    "h12_2_over_baselines": true,
+    "h12_3_refinement": true,
+    "h12_4_identity_invariance": true,
+    "overall_pass": true,
+    "predictive_accuracy": 1.0,
+    "predictive_category_count": 9,
+    "random_mean_accuracy": 0.3300000000000003,
+    "reset_count": 9,
+    "som_accuracy": 0.3333333333333333,
+    "som_category_count": 3
+  },
+  "experiment": "EXP012",
+  "exploratory_matched_capacity_som_predictions": [
+    "bounce",
+    "roll",
+    "support",
+    "bounce",
+    "roll",
+    "roll",
+    "bounce",
+    "roll",
+    "bounce"
+  ],
+  "predictive_predictions": [
+    "bounce",
+    "roll",
+    "support",
+    "bounce",
+    "roll",
+    "support",
+    "bounce",
+    "roll",
+    "support"
+  ],
+  "som_predictions": [
+    "bounce",
+    "bounce",
+    "bounce",
+    "bounce",
+    "bounce",
+    "bounce",
+    "bounce",
+    "bounce",
+    "bounce"
+  ]
+}

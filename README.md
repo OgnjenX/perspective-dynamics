@@ -38,7 +38,7 @@ Develop and evaluate a biologically grounded computational theory connecting:
 
 ## Project status
 
-Week 1 framing and ten computational experiments are complete. `EXP001`–`EXP007` characterize synthetic perspective-switching dynamics and preserve a partial falsification. `EXP008` establishes implementability of explicit schema composition. `EXP009` shows role-annotated relational transfer across held-out and name-scrambled objects. `EXP010` shows that a task-valid explicit bridge is necessary and sufficient under individual, static-union, removal, ordering, and matched-sham controls. However, a perspective-erased ordinary planner exactly reproduces EXP009/EXP010. The current result is abstract compositional planning, not yet evidence for a distinct creativity mechanism or biological implementation.
+Fourteen computational experiments are complete. `EXP008`–`EXP010` show explicit composition and relational transfer but reduce to ordinary planning when schemas and bridges are supplied. `EXP011`–`EXP013` show that engineered episode features support unsupervised categories, prediction-driven refinement, and target-dependent organizations. `EXP014` learns a transferable elevation-plus-stability conjunction without a supplied bridge feature, but similarity-only SOM performs equally well. The project has not yet shown that predictive self-organization provides a unique bridge-discovery advantage. It remains a computational representation-learning program, not evidence for creativity or biological implementation.
 
 Run the fully reproducible baseline with:
 

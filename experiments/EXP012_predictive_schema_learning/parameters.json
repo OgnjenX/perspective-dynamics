@@ -1,0 +1,1 @@
+{"som_category_count":3,"som_epochs":80,"learning_rate":0.35,"som_seed":12012,"vigilance":0.65,"random_seed_start":12100,"random_seed_stop":12299,"minimum_predictive_accuracy":0.85,"minimum_predictive_minus_som":0.2,"minimum_predictive_minus_random":0.25}

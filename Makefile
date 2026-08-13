@@ -1,4 +1,4 @@
-.PHONY: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004 exp005 analyze-exp005 exp006 analyze-exp006 exp007 analyze-exp007 exp008 exp009 exp010 reproduce
+.PHONY: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004 exp005 analyze-exp005 exp006 analyze-exp006 exp007 analyze-exp007 exp008 exp009 exp010 exp011 exp012 exp013 exp014 reproduce
 
 test:
 	PYTHONPATH=src python3 -m unittest discover -s tests -v
@@ -54,4 +54,16 @@ exp009:
 exp010:
 	PYTHONPATH=src python3 experiments/EXP010_emergent_trajectory/run.py
 
-reproduce: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004 exp005 analyze-exp005 exp006 analyze-exp006 exp007 analyze-exp007 exp008 exp009 exp010
+exp011:
+	PYTHONPATH=src python3 experiments/EXP011_schema_discovery/run.py
+
+exp012:
+	PYTHONPATH=src python3 experiments/EXP012_predictive_schema_learning/run.py
+
+exp013:
+	PYTHONPATH=src python3 experiments/EXP013_multi_perspective_ART/run.py
+
+exp014:
+	PYTHONPATH=src python3 experiments/EXP014_emergent_bridge/run.py
+
+reproduce: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004 exp005 analyze-exp005 exp006 analyze-exp006 exp007 analyze-exp007 exp008 exp009 exp010 exp011 exp012 exp013 exp014

@@ -35,3 +35,19 @@ Biological interpretation remains closed. The next computational question is
 whether a system can discover or construct a useful cross-perspective bridge
 from separate experiences in a way that yields measurable transfer or
 efficiency beyond a planner operating on the same stored experience.
+
+## Predictive Schema and Bridge Discovery
+
+**Status:** Completed with partial support; decisive predictive-advantage gate failed.
+
+EXP011 established similarity-based category transfer under an identity-free
+feature representation. EXP012 passed its frozen prediction-refinement criteria,
+but used more categories than the frozen SOM; a post-hoc capacity-matched SOM
+narrowed the advantage. EXP013 showed that supplied prediction targets induce
+different category organizations and a transferable cross-map.
+
+EXP014 learned the elevation-plus-stability conjunction without a bridge
+feature and passed transfer, explanation, removal, and identity tests. It
+failed overall because SOM without prediction achieved the same perfect
+candidate-selection success. Predictive self-organization has not shown a
+unique bridge-discovery advantage. Biological interpretation remains closed.

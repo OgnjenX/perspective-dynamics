@@ -381,3 +381,74 @@ does not yet have evidence for a computational primitive beyond planning. No
 `biological_grounding/` track is created. The next experiment must withhold the
 bridge and test whether it can be discovered from separate experiences under a
 matched-information comparison.
+
+## 2026-08-14 — Predictive schema-discovery phase design freeze
+
+### Motivation
+
+PR #12 is preserved as a valuable negative result: supplied abstractions and a
+supplied bridge reduce to ordinary forward planning. The new target is
+formation of reusable predictive representations from episodes.
+
+### Experiment ladder
+
+EXP011 tests unsupervised similarity categories and held-out object transfer.
+EXP012 tests whether prediction-error reset/refinement improves categories over
+SOM similarity. EXP013 tests whether different prediction targets organize the
+same episodes differently. EXP014 withholds the bridge and asks whether a
+predictive learner recovers the elevation-plus-stability conjunction from
+positive and negative candidate configurations.
+
+### Claim and mechanism boundary
+
+The ART/ARTMAP terminology is restricted to an algorithmic motif: competitive
+choice, vigilance, prediction mismatch, reset, and category creation. No neural
+dynamics, biological ART interpretation, hippocampal/PFC account, DFT, neural
+manifold, or metastability document is created in this phase.
+
+### Falsification commitment
+
+All experiments compare random categories, similarity-only SOM, predictive
+categories, ordinary memory/planning, and hand-written references where
+applicable. Failure to outperform matched nonpredictive and ordinary baselines
+will keep the biological phase closed.
+
+### Post-execution audit amendment
+
+The initial EXP012 runner asserted identity invariance rather than recomputing
+predictions after identity replacement. Correct this audit implementation and
+rerun; the vectorizer excludes identity, so this is expected not to alter the
+outcome. Also add a post-hoc SOM diagnostic with nine categories, matching the
+predictive learner's realized capacity. This diagnostic does not alter frozen
+H12 criteria and must not be described as confirmatory.
+
+## 2026-08-14 — EXP011–EXP014 completed
+
+### Validation
+
+Forty-five tests passed. All four frozen experiments executed deterministically.
+EXP011 and EXP012 preserve 200 random-control runs each; EXP014 preserves 200
+random candidate-selection controls.
+
+### Results
+
+EXP011 passed: competitive learning and SOM each achieved 1.0 purity and
+held-out accuracy. EXP012 passed its frozen criteria with predictive accuracy
+1.0 versus SOM 0.333333 and random 0.33, with nine resets and nine predictive
+categories. The post-hoc nine-category SOM reached 0.777778. EXP013 passed:
+all modules and the cross-map reached 1.0, with nonidentical co-clustering
+organizations.
+
+EXP014 failed overall. Predictive learning transferred perfectly, recovered
+the `elevated`, `stable`, `structure` intersection, and failed under either
+component removal. Exact-memory planning scored 0.0 and random clustering
+0.016, but SOM also scored 1.0, failing H14.2.
+
+### Interpretation
+
+The phase demonstrates category and conjunction discovery from engineered
+episode features. It does not show that prediction is necessary for bridge
+discovery, because the bridge was already separable in similarity geometry.
+The next design must make positive and negative configurations similarity-
+matched while preserving a predictive regularity, and must prospectively match
+model capacity. No biological interpretation track is opened.
