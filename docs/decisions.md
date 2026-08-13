@@ -24,6 +24,7 @@ This file records consequential scientific and repository decisions. Decisions m
 | D018 | 2026-08-13 | Accepted | Expose goal activation only as a scalar controller evaluation signal, never as content input. | Models usefulness feedback while preserving search dynamics, but explicitly bounds the claim to supervised evaluation-gated switching. | A less supervised progress signal is validated. |
 | D019 | 2026-08-13 | Accepted | Test the dwell-time tradeoff in EXP004 before calling the dynamics metastable. | The switching interval is externally controlled; an intermediate optimum is necessary but not sufficient evidence for emergent metastability. | A self-organized controller reproduces the regime. |
 | D020 | 2026-08-13 | Accepted | Freeze contrasts on blocks 10/15/20 versus blocks 1 and 60 across three evaluation thresholds. | Prevents selecting a favorable interval or threshold after observing the sweep. | Integrity failure or numerical instability invalidates the grid. |
+| D021 | 2026-08-13 | Accepted | Treat the apparent 3→5→10 optimum shift as exploratory and replicate it on held-out seeds. | The scaling pattern was noticed after inspecting EXP004 cell maxima. | A prospectively specified held-out experiment passes or falsifies it. |
 
 ## Decision template
 

@@ -21,6 +21,8 @@ Record each consequential change in `docs/decisions.md`; append rather than sile
 - `make analyze-exp002`: aggregate EXP002 and its paired comparison.
 - `make exp003`: generate EXP003 adaptive-switching results.
 - `make analyze-exp003`: aggregate EXP003 and verify matched schedules.
+- `make exp004`: generate the EXP004 dwell-regime sweep.
+- `make analyze-exp004`: evaluate the frozen intermediate-versus-extreme contrasts.
 - `make reproduce`: run tests, generation, and analysis in sequence.
 
 Python 3.11 or later is required; the baseline has no third-party runtime dependency. Use four-space indentation, type hints, immutable dataclasses for configurations/results, and deterministic node ordering.

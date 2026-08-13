@@ -1,3 +1,7 @@
 # EXP004 Results
 
-Generated raw, cell-summary, and frozen-contrast tables will be stored here. Exploratory model fits or figures must be labeled and stored separately.
+- `raw.csv`: all 2,700 runs;
+- `summary.csv`: 27 block × threshold cells;
+- `contrasts.csv`: four frozen intermediate-versus-extreme tests.
+
+Exploratory model fits or figures must be labeled and stored separately.

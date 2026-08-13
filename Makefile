@@ -1,4 +1,4 @@
-.PHONY: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 reproduce
+.PHONY: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004 reproduce
 
 test:
 	PYTHONPATH=src python3 -m unittest discover -s tests -v
@@ -21,4 +21,10 @@ exp003:
 analyze-exp003:
 	PYTHONPATH=src python3 experiments/EXP003_adaptive_switching/analysis.py
 
-reproduce: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003
+exp004:
+	PYTHONPATH=src python3 experiments/EXP004_dwell_regime/run.py
+
+analyze-exp004:
+	PYTHONPATH=src python3 experiments/EXP004_dwell_regime/analysis.py
+
+reproduce: test baseline analyze exp002 analyze-exp002 exp003 analyze-exp003 exp004 analyze-exp004

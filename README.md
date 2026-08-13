@@ -36,7 +36,7 @@ Develop and evaluate a biologically grounded computational theory connecting:
 
 ## Project status
 
-Week 1 scientific framing and the first three computational steps are complete. `EXP001` validated the fixed-representation baseline. `EXP002` showed that matched perspective matrices change solution accessibility solely through relational ordering and produced an exploratory selective-framing interference effect. `EXP003` showed that evaluation-gated mismatch switching outperforms schedule-matched random replay by allocating dwell to a useful frame. The next test is whether productive performance occupies an intermediate dynamical regime between rapid and overly persistent switching.
+Week 1 framing and four computational experiments are complete. `EXP001` validated the fixed baseline; `EXP002` isolated relational geometry; `EXP003` showed evaluation-gated switching beats schedule-matched replay; and `EXP004` prospectively confirmed an intermediate dwell regime over rapid switching and excessive persistence. EXP004 also revealed an exploratory coupling between evidence threshold and optimal dwell, now awaiting held-out confirmation before it is treated as a substantive result.
 
 Run the fully reproducible baseline with:
 
