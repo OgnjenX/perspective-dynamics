@@ -143,3 +143,17 @@ Task-valid feedback improved which frame occupied the available dwell segments. 
 ### Next test
 
 Prospectively sweep dwell/decision times to test the stronger metastability prediction: very short dwell should prevent evidence accumulation, while very long dwell should delay escape. An intermediate optimum must reproduce across seeds and evaluation thresholds before it is treated as interesting.
+
+## 2026-08-13 — EXP004 prospective design
+
+### Question
+
+Does evaluation-gated switching show a robust intermediate dwell-time optimum rather than benefiting monotonically from faster or slower switching?
+
+### Frozen contrasts
+
+For each of three evaluation thresholds and in pooled data, mean peak activation across block lengths 10, 15, and 20 must exceed both block 1 and block 60. The complete 9 × 3 grid and 100 seeds are fixed before implementation.
+
+### Claim boundary
+
+Decision intervals are externally imposed. Even if the primary contrasts pass, the result is a controlled dwell-time tradeoff, not yet emergent neural metastability.
