@@ -1,0 +1,5 @@
+condition,n,success_rate,median_first_passage_step,mean_peak_goal_activation,mean_final_goal_rank,mean_realized_distance,mean_edge_count,mean_total_weight
+fixed_initial,50,0.000,,0.00007021,8.640,6.000,9.000,8.93855032
+fixed_irrelevant,50,0.000,,0.00000000,9.000,8.000,9.000,8.93855032
+fixed_useful,50,1.000,8.0,1.15170451,2.000,2.000,9.000,8.93855032
+mixed,50,1.000,12.5,0.40483027,5.080,2.000,21.240,8.93855032

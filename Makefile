@@ -1,4 +1,4 @@
-.PHONY: test baseline analyze reproduce
+.PHONY: test baseline analyze exp002 analyze-exp002 reproduce
 
 test:
 	PYTHONPATH=src python3 -m unittest discover -s tests -v
@@ -9,4 +9,10 @@ baseline:
 analyze:
 	PYTHONPATH=src python3 experiments/EXP001_baseline_association/analysis.py
 
-reproduce: test baseline analyze
+exp002:
+	PYTHONPATH=src python3 experiments/EXP002_perspective_matrices/run.py
+
+analyze-exp002:
+	PYTHONPATH=src python3 experiments/EXP002_perspective_matrices/analysis.py
+
+reproduce: test baseline analyze exp002 analyze-exp002
