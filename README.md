@@ -8,7 +8,7 @@ Can creativity emerge from neural systems that dynamically change the representa
 
 ## Core hypothesis
 
-A creative solution may not require finding a new path through a fixed representation. It may instead become reachable when a system changes the geometry and dynamics of its internal representation.
+A creative solution may not require finding a new path through a fixed representation. It may instead become reachable when a system changes the geometry and dynamics of its internal representation. The refined hypothesis concerns an **effective perspective repertoire**: creativity should benefit from access to several distinct frames only when the system can retrieve, select, dwell within, and integrate them.
 
 A fixed-frame system can be written schematically as:
 
@@ -24,6 +24,8 @@ dx/dt = F(x, p)
 
 Here, `x` is the system state and `p` is the active perspective or context. The claim to test is that changing `p` can alter effective distances, transition paths, and attractor accessibility—not merely add noise or more information.
 
+The project treats collaboration as a second organizational form of this proposal: different task-relevant frames may be distributed across people rather than held within one person. This is a hypothesis to test under matched information and compute, not an assumption that more people or greater demographic diversity automatically improves creativity.
+
 ## Long-term goal
 
 Develop and evaluate a biologically grounded computational theory connecting:
@@ -36,7 +38,7 @@ Develop and evaluate a biologically grounded computational theory connecting:
 
 ## Project status
 
-Week 1 framing and five computational experiments are complete. `EXP001` validated the fixed baseline; `EXP002` isolated relational geometry; `EXP003` showed evaluation-gated switching beats schedule-matched replay; `EXP004` confirmed an intermediate dwell regime; and `EXP005` confirmed on held-out seeds that stricter evidence thresholds shift productive perspective dwell later. This first registered finding remains model-specific and requires aggressive falsification before biological interpretation.
+Week 1 framing and five computational experiments are complete. `EXP001` validated the fixed baseline; `EXP002` isolated relational geometry; `EXP003` showed evaluation-gated switching beats schedule-matched replay; `EXP004` confirmed an intermediate dwell regime; and `EXP005` confirmed on held-out seeds that stricter evidence thresholds shift productive perspective dwell later. This first registered finding remains model-specific and requires aggressive falsification before biological interpretation. These experiments are mechanistic groundwork; they do not yet test perspective-repertoire size, collaboration, or hippocampal involvement.
 
 Run the fully reproducible baseline with:
 

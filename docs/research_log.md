@@ -211,3 +211,25 @@ Targeted searches found close work on stability/flexibility control, autonomous 
 ### Next research gate
 
 Attempt to falsify F001 across alternative graph structures and propagation rules, then replace the external block clock with self-timed adaptation and mismatch dynamics. Biological implementation remains premature until those tests pass.
+
+## 2026-08-13 — Core-hypothesis refinement after conceptual review
+
+### Motivation
+
+The original motivation was clarified: collaboration may aid creativity because task-relevant perspectives are distributed across people, while an individual able to access several perspectives may implement a related process internally. This raised a sharper construct question than the initial switching experiments addressed.
+
+### Definition change
+
+Perspective is now distinguished from generic context and from a literal reference frame. A proposed perspective must produce a reproducible, reusable change in relational geometry, feature relevance, causal or affordance prediction, or search behavior over controlled shared content. Raw perspective count is replaced by effective perspective repertoire, which includes distinctness, accessibility, switching control, and integration.
+
+### New prospective hypotheses
+
+H6 compares multi-perspective individuals/systems with collaborating sets of narrower individuals/systems under matched frame coverage, information, compute, and evaluation. H7 predicts that perspective diversity is beneficial only while frames remain translatable and integrable. These hypotheses were formulated after EXP001–EXP005 and are not supported by those results.
+
+### Neural interpretation
+
+Perspective is provisionally treated as a distributed population state with mixed selectivity rather than a fixed set of context neurons. Hippocampal-entorhinal relational maps and prefrontal task-state control are candidate interacting mechanisms. This is a literature-grounded prediction for later empirical work, not a biological conclusion from the current simulations.
+
+### Repository and merge implication
+
+The existing experiment stack should be preserved because it provides documented mechanistic prerequisites and maintains appropriate claim boundaries. It should be merged in dependency order only after the conceptual-refinement changes are reviewed and the full stack remains reproducible. No old result should be relabeled as evidence for the new collaboration or repertoire hypotheses.
