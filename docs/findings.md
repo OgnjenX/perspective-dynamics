@@ -38,3 +38,33 @@ This registry records results that passed a prospective or held-out criterion. I
 6. learned rather than hand-constructed perspectives.
 
 **Paper relevance:** strengthened mechanistic prediction for a computational theory paper, but the external clock and supervised progress signal remain critical blockers.
+
+## F002 — Abstract schemas transfer, but explicit integration is planning-equivalent
+
+**Status:** prospectively supported structural result with a failed
+distinctiveness criterion; not evidence for creativity or biology.
+
+**Experiments:** EXP009 and EXP010.
+
+**Finding:** Role-annotated schemas generalized across three held-out object
+sets and their name-scrambled counterparts. Structured composition achieved a
+1.0 success rate versus 0.633333 for random schema selection under matched
+schema-check budgets. EXP010 produced a four-step trajectory only when a
+task-valid bridge consumed relations from support and stability perspectives;
+all individual, static-union, schema-removal, and matched-sham controls failed.
+The result was invariant across 72 environment × schema-order runs.
+
+**Critical qualification:** A perspective-erased ordinary forward planner with
+the same operators reproduced every structured result and schema-check count.
+The current implementation therefore demonstrates abstract compositional
+planning and explicit bridge necessity, not a mechanism computationally
+distinct from ordinary planning.
+
+**What this does not establish:** autonomous schema extraction, discovery of
+the bridge relation, a creative advantage, neural implementation, or biological
+plausibility.
+
+**Next falsification gate:** compare systems from the same separate experience
+corpus without supplying the bridge operator. Any proposed integration
+mechanism must show held-out transfer, efficiency, or representational
+construction unavailable to a matched planner over the same stored evidence.

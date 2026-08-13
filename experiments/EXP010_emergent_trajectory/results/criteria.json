@@ -1,0 +1,11 @@
+{
+  "beyond_ordinary_planning_pass": false,
+  "h10_1_individual_trajectory_exclusion": true,
+  "h10_2_static_union_exclusion": true,
+  "h10_3_integration_sufficiency_and_provenance": true,
+  "h10_4_counterfactual_necessity": true,
+  "h10_5_ordering_invariance": true,
+  "h10_6_matched_capacity_sham_failure": true,
+  "ordinary_planner_equivalent": true,
+  "structural_emergence_pass": true
+}

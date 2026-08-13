@@ -1,5 +1,8 @@
 # Results
 
-Generated outputs will contain per-step provenance, all schema-order runs,
-counterfactual removals, matched ordinary-planner runs, and frozen criteria.
-No result exists at design-freeze time.
+Generated outputs:
+
+- `events.jsonl`: 168 runs with per-step provenance, all schema orders,
+  counterfactuals, sham controls, and matched ordinary planners;
+- `criteria.json`: frozen H10 criterion outcomes;
+- `summary.json`: compact result and claim boundary.

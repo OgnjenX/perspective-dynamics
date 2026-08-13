@@ -38,7 +38,7 @@ Develop and evaluate a biologically grounded computational theory connecting:
 
 ## Project status
 
-Week 1 framing and eight computational experiments are complete. `EXP001`–`EXP006` established and structurally challenged a model-specific evidence-demand/dwell relation. `EXP007` removed periodic decision blocks: calibration and matched controls passed, but the full experiment failed because productive frames became horizon-censored absorbing states rather than demonstrating repeated variable completed dwell. `EXP008` establishes only that explicit cross-perspective schema composition is implementable in one hand-designed synthetic world. It is a Level 1 prototype, not evidence for creativity, generalization, learning, or biology.
+Week 1 framing and ten computational experiments are complete. `EXP001`–`EXP007` characterize synthetic perspective-switching dynamics and preserve a partial falsification. `EXP008` establishes implementability of explicit schema composition. `EXP009` shows role-annotated relational transfer across held-out and name-scrambled objects. `EXP010` shows that a task-valid explicit bridge is necessary and sufficient under individual, static-union, removal, ordering, and matched-sham controls. However, a perspective-erased ordinary planner exactly reproduces EXP009/EXP010. The current result is abstract compositional planning, not yet evidence for a distinct creativity mechanism or biological implementation.
 
 Run the fully reproducible baseline with:
 
