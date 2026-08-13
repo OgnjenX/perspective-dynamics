@@ -32,6 +32,10 @@ Record each consequential change in `docs/decisions.md`; append rather than sile
 - `make exp008`: reproduce the Level 1 schema-composition prototype.
 - `make exp009`: run generalized schema composition and matched controls.
 - `make exp010`: run explicit-integration, counterfactual, and planning controls.
+- `make exp011`: run unsupervised schema-discovery baselines.
+- `make exp012`: compare predictive refinement with similarity-only categories.
+- `make exp013`: test multiple predictive organizations and cross-maps.
+- `make exp014`: run learned bridge discovery and matched controls.
 - `make reproduce`: run tests, generation, and analysis in sequence.
 
 Python 3.11 or later is required; the baseline has no third-party runtime dependency. Use four-space indentation, type hints, immutable dataclasses for configurations/results, and deterministic node ordering.
