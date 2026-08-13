@@ -233,3 +233,17 @@ Perspective is provisionally treated as a distributed population state with mixe
 ### Repository and merge implication
 
 The existing experiment stack should be preserved because it provides documented mechanistic prerequisites and maintains appropriate claim boundaries. It should be merged in dependency order only after the conceptual-refinement changes are reviewed and the full stack remains reproducible. No old result should be relabeled as evidence for the new collaboration or repertoire hypotheses.
+
+## 2026-08-13 — EXP006 prospective falsification design
+
+### Target
+
+Test whether F001 survives changed graph structure and propagation normalization. The original path × source-normalized environment is retained as a positive control; branched topology and symmetric normalization yield three novel environments.
+
+### Frozen test
+
+Use 150 unseen seeds and the unchanged EXP005 threshold/block grid for 50,400 scheduled runs. The positive control retains the original criteria. Every novel environment must independently show a positive rank trend, limited reversals, at least three distinct optimal dwell values, and at least four interior optima. The overall robustness claim requires all three novel environments to pass.
+
+### Boundary
+
+This is a synthetic model robustness test. It does not test the newly introduced effective-repertoire, collaboration, or hippocampal hypotheses. Result generation begins only after this design is committed.

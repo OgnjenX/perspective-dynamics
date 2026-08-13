@@ -1,0 +1,35 @@
+{
+  "topologies": ["path", "branched_path"],
+  "propagation_rules": ["source_normalized", "symmetric_normalized"],
+  "decision_block_steps": [1, 2, 3, 4, 5, 7, 10, 15, 20, 30, 40, 60],
+  "evaluation_thresholds": [0.0005, 0.001, 0.002, 0.005, 0.01, 0.02, 0.04],
+  "positive_control_minimum_spearman_rho": 0.8,
+  "positive_control_maximum_adjacent_reversals": 1,
+  "novel_minimum_spearman_rho": 0.6,
+  "novel_maximum_adjacent_reversals": 2,
+  "novel_minimum_distinct_optima": 3,
+  "novel_minimum_interior_optima": 4,
+  "distances": {
+    "initial": 6,
+    "useful": 2,
+    "irrelevant": 8
+  },
+  "node_count": 10,
+  "branches_per_core_node": 1,
+  "seed_start": 2000,
+  "seed_stop_exclusive": 2150,
+  "edge_weight_min": 0.8,
+  "edge_weight_max": 1.2,
+  "branch_weight_min": 0.8,
+  "branch_weight_max": 1.2,
+  "solution_threshold": 0.01,
+  "controller_seed_offset": 700000,
+  "dynamics": {
+    "time_step": 0.1,
+    "decay_rate": 1.0,
+    "propagation_gain": 0.9,
+    "input_gain": 1.0,
+    "global_inhibition": 0.05,
+    "steps": 120
+  }
+}
