@@ -143,3 +143,35 @@ Task-valid feedback improved which frame occupied the available dwell segments. 
 ### Next test
 
 Prospectively sweep dwell/decision times to test the stronger metastability prediction: very short dwell should prevent evidence accumulation, while very long dwell should delay escape. An intermediate optimum must reproduce across seeds and evaluation thresholds before it is treated as interesting.
+
+## 2026-08-13 — EXP004 prospective design
+
+### Question
+
+Does evaluation-gated switching show a robust intermediate dwell-time optimum rather than benefiting monotonically from faster or slower switching?
+
+### Frozen contrasts
+
+For each of three evaluation thresholds and in pooled data, mean peak activation across block lengths 10, 15, and 20 must exceed both block 1 and block 60. The complete 9 × 3 grid and 100 seeds are fixed before implementation.
+
+### Claim boundary
+
+Decision intervals are externally imposed. Even if the primary contrasts pass, the result is a controlled dwell-time tradeoff, not yet emergent neural metastability.
+
+## 2026-08-13 — EXP004 first validated sweep
+
+### Prospective result
+
+All frozen intermediate-versus-extreme inequalities passed at each evaluation threshold and in pooled data. Intermediate blocks 10/15/20 exceeded both one-step switching and 60-step persistence on continuous peak activation.
+
+### Mechanism visible in supporting measures
+
+One-step conditions repeatedly revisited frames and accumulated enough state to succeed, but required 6.7–15.5 switches on average and remained below the intermediate activation mean. Sixty-step persistence delayed useful-frame entry to step 60 when reached and reduced success to 87–91%.
+
+### Post-result exploratory pattern
+
+The observed optimal block increased from 3 to 5 to 10 as evaluation threshold increased from 0.001 to 0.005 to 0.02. This threshold–timescale coupling was not a frozen primary test and must be replicated prospectively.
+
+### Next step
+
+Use held-out seeds and a denser threshold/block grid to test whether optimal dwell is monotonically related to evidence requirement. Only after replication should it inform a self-timed dynamical controller.

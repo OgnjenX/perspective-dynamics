@@ -1,0 +1,5 @@
+evaluation_threshold,intermediate_mean_activation,rapid_mean_activation,persistent_mean_activation,intermediate_minus_rapid,intermediate_minus_persistent,both_primary_inequalities_pass
+0.001,1.02367781,0.95818476,0.53786744,0.06549305,0.48581037,1
+0.005,1.04437789,0.96407709,0.53752291,0.08030080,0.50685498,1
+0.02,1.06354795,0.90920775,0.59011211,0.15434020,0.47343584,1
+pooled,1.04386788,0.94382320,0.55516749,0.10004469,0.48870040,1
