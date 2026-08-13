@@ -17,6 +17,8 @@ Record each consequential change in `docs/decisions.md`; append rather than sile
 - `make test`: run the standard-library unit tests.
 - `make baseline`: generate EXP001 raw results.
 - `make analyze`: aggregate EXP001 conditions.
+- `make exp002`: generate EXP002 matched-perspective results.
+- `make analyze-exp002`: aggregate EXP002 and its paired comparison.
 - `make reproduce`: run tests, generation, and analysis in sequence.
 
 Python 3.11 or later is required; the baseline has no third-party runtime dependency. Use four-space indentation, type hints, immutable dataclasses for configurations/results, and deterministic node ordering.

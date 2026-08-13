@@ -89,3 +89,21 @@ Use three weighted-path frames over the same ten nodes. Their only intended diff
 ### Claim boundary
 
 EXP002 can validate the perspective-matrix manipulation and the minimal geometry effect. It cannot show that the system discovers or adaptively selects a useful frame. Those are reserved for EXP003.
+
+## 2026-08-13 — EXP002 first validated run
+
+### Validation
+
+Twelve unit tests passed. Frame integrity checks confirmed matched nodes, nine edges per individual frame, identical seed-level total weights, requested distances, and preserved total weight mass in the equal blend. The experiment generated 200 raw runs.
+
+### Prospective result
+
+The useful frame succeeded in every seed and produced greater peak goal activation than the initial frame in all 50 paired comparisons. Initial and irrelevant frames did not reach threshold. This validates the controlled geometry manipulation but is expected from their designed path lengths.
+
+### Post-result exploratory observation
+
+The equal blend and useful frame both had a two-edge shortest cue-to-goal path and identical total weight mass, yet the selective useful frame produced substantially stronger goal activation in every seed. This comparison was not a prospective primary prediction and is stored separately in `exploratory.csv`.
+
+### Interpretation and next test
+
+The pattern suggests selective framing may reduce cross-frame interference rather than merely add useful relations. Because the mixed graph has higher local degree and the model normalizes outgoing propagation, the effect may be a normalization artifact. A prospective control must match local degree/flow or vary normalization before treating selective gating as a broader result.

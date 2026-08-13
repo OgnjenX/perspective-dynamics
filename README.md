@@ -36,7 +36,7 @@ Develop and evaluate a biologically grounded computational theory connecting:
 
 ## Project status
 
-Week 1 scientific framing is complete. Phase 1 contains a validated fixed-representation spreading-activation baseline and `EXP001`, which measures degradation across associative distance and distractor load. The first 240-run grid reproduced the predicted attenuation, delay, and distraction effects, with documented floor effects at longer paths. No perspective-switching mechanism has been implemented yet.
+Week 1 scientific framing and the first two computational steps are complete. `EXP001` validated the fixed-representation baseline. `EXP002` showed that matched perspective matrices change solution accessibility solely through relational ordering. It also produced a clearly labeled exploratory indication that selective framing can reduce cross-frame interference compared with simultaneous matrix blending. No autonomous perspective-switching mechanism has been implemented yet.
 
 Run the fully reproducible baseline with:
 

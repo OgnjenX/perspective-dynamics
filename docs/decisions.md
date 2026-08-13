@@ -18,6 +18,7 @@ This file records consequential scientific and repository decisions. Decisions m
 | D012 | 2026-08-13 | Accepted | Isolate perspective geometry in EXP002 using matched weighted paths over identical nodes. | Equal nodes, edges, weight distributions, degree profiles, inputs, and compute rule out simple capacity explanations. | Integrity checks fail or the manipulation proves too artificial for its stated validation role. |
 | D013 | 2026-08-13 | Accepted | Keep switching out of EXP002. | First verify that the perspective representation itself has the predicted computational consequence; test selection and switching separately in EXP003. | After EXP002 passes its prospective integrity and behavior checks. |
 | D014 | 2026-08-13 | Accepted | Include an equal-matrix blend as an exploratory simultaneous-frames control. | Tests whether making all relations concurrently available substitutes for selective framing, while preserving total weight mass. | The blend cannot be interpreted due to topology or normalization artifacts. |
+| D015 | 2026-08-13 | Accepted | Treat the selective-frame advantage over the mixed graph as exploratory and require prospective interference controls. | The comparison was inspected after results and may be explained by greater mixed-graph degree under outgoing normalization. | A preregistered replication controls local degree/flow and alternative propagation rules. |
 
 ## Decision template
 
